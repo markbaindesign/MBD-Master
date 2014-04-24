@@ -14,7 +14,7 @@ $selectionColor: orange;
 // Colors
 $red: green;
 $blue: blue;
-$menu-color: #eee;
+$menu-base-color: #eee;
 
 // Breakpoints
 @mixin breakpoint($point) {
