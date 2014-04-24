@@ -1,5 +1,21 @@
 (function($) {
+/*
+===============================================
+		
+		FitVids  
+	
+===============================================
+*/		
 
+jQuery( document ).ready( function( $ ) { // Wrap all scripts in this
+	
+	// Script
+	$(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $("#content").fitVids();
+  });
+
+}); // Wrap all scripts in thi
 /*
 =====================================================
 		
