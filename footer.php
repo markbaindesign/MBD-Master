@@ -16,9 +16,15 @@
 			<ul id="credits">
 				<li id="copyright"><a href="<?php echo bloginfo( 'url' ); ?>">&copy; <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?></a></li> 
 				<li id="tagline"><?php echo get_bloginfo( 'description' ); ?></li> 
+<li>	<ul id="social" class="clearfix">
+		<li><a href="https://www.facebook.com"><i aria-hidden="true" class="icon-facebook icon-left"></i><span class="">Facebook</span></a></li> 
+		<li><a href="https://twitter.com"><i aria-hidden="true" class="icon-twitter icon-left"></i><span class="">Twitter</span></a></li> 
+		<li><a href="<?php bloginfo('rss2_url'); ?>"><i aria-hidden="true" class="icon-feed icon-left"></i><span class="">RSS</span></a></li> 
+	</ul></li>
 
 				<li id="design">Designed <span class="amp">&amp;</span> coded by <a href="http://markbaindesign.com" title="Visit the website of Mark Bain Design">Mark Bain Design</a></li>
 			</ul>
+
 		</div><!-- .site-info -->
 
 		<div id="back-to-top" >

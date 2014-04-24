@@ -6,7 +6,7 @@
 // @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
 
 // Structure
-$pageWidth: 1000px;
+$pageWidth: 100%;
 
 // Text Selection
 $selectionColor: orange;
@@ -14,3 +14,6 @@ $selectionColor: orange;
 // Colors
 $red: green;
 $blue: blue;
+
+// Breakpoints
+$break-small: 800px;
