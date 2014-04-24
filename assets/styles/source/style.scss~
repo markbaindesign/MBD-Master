@@ -1,9 +1,10 @@
 /*!
-Theme Name: MBD Master
-Description: A Mobile-first theme By Mark Bain Design
-Author: Mark Bain
-Author URI: http://markbaindesign.com/
-Version: 0.0.0
+Theme Name: WordPress Starter Theme
+Theme URI: http://www.THEME.com
+Author: Matt Banks
+Author URI: http://mattbanks.me
+Description: WordPress Starter Theme for use as a starting template for building custom themes.
+Version: 1.0
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _mbbasetheme

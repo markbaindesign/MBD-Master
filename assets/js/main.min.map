@@ -1,0 +1,1 @@
+{"version":3,"file":"main.min.js","sources":["source\\main.js"],"names":["jQuery","document","ready","$","click","animate","scrollTop"],"mappings":"CAAA,WAUAA,OAAOC,UAAUC,MAAM,SAASC,GAE/BA,EAAEF,UAAUC,MAAM,WAEjBC,EAAE,kBAAkBC,MAAM,WAIzB,MAHAD,GAAE,aAAaE,SACdC,UAAW,GACT,MACI,SAMPN"}

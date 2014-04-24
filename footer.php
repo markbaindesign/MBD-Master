@@ -16,8 +16,8 @@
 		</div><!-- .site-info -->
 	<div id="back-to-top" >
 		
-		<a href="#header" title="Go back to the top" class="si-icons si-icons-hover">
-			<span class="si-icon si-icon-nav-up-arrow" data-icon-name="navUpArrow"></span>
+		<a href="#header" title="Go back to the top" class="">
+			<span class="si-icon si-icon-nav-up-arrow" data-icon-name="navUpArrow">Back to top</span>
 		</a>
 
 			
