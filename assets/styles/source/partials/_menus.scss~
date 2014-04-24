@@ -52,11 +52,11 @@
 	 background: darken($menu-base-color, 2%);
  }
 
-.main-navigation ul ul l:hover > a {
+.main-navigation ul ul:hover > a {
 	 background: darken($menu-base-color, 4%);
  }
 
- .main-navigation ul ul ul li:hover > a {
+ .main-navigation ul ul ul:hover > a {
 	 background: darken($menu-base-color, 6%);
  }
 
