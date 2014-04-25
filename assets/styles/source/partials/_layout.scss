@@ -39,7 +39,39 @@
 	width: 100%;
 }
 
+#footer-widgets {
+	padding: $block-padding;
+}
+
 .site-footer ul {
 	padding: 0;
 	margin-bottom: 1em;
+}
+
+.masonrycontainer {
+	@include clearfix();
+}
+
+.masonrycontainer aside {
+	float: none;
+	padding: 2%;
+	width: 100%;
+	@include breakpoint(medium) {
+		float: left;
+		width: 31.25%;
+	}
+}
+
+.grid-sizer {
+	width: 100%;
+	@include breakpoint(medium) {
+		width: 31.25%;
+	}
+}
+
+.gutter-sizer {
+	width: 0;
+	@include breakpoint(medium) {
+		width: 3.125%;
+	}
 }

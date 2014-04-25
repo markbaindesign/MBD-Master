@@ -11,19 +11,17 @@
 	</div><!-- #content -->
 	
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div class="widget-container">
-			
-			<div class="container">
-				
-				<div class="masonrycontainer clearfix">
+		<div id="footer-widgets" class="widget-area">
 			
 				
+				<div class="masonrycontainer">
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>				
 					<?php dynamic_sidebar( 'sidebar-2' ); ?>
 				
 				
 				</div>
 				
-			</div>
 			
 		</div><!-- .widget-container -->
 	<?php endif; ?>

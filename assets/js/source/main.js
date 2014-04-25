@@ -51,8 +51,11 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 
 		// initialize Masonry
 
-		var $container = $('.masonrycontainer').masonry({
-			itemSelector: '.item'
+		$container = $('.masonrycontainer').masonry({
+			columnWidth: '.grid-sizer',
+			gutter: '.gutter-sizer',
+			itemSelector: ".item"
+		
 		});
 		
 		// layout Masonry again after all images have loaded
@@ -60,10 +63,7 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 		$container.imagesLoaded( function() {
 		$container.masonry();
 		});
-		
-		$container(".item img").lazyload({
-			effect : "fadeIn"
-		});
+
 		
 
 /*

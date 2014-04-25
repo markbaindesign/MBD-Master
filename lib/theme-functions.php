@@ -105,11 +105,25 @@ function mb_scripts() {
 
 	if ( !is_admin() ) {
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'jquery-masonry' );	
+		// wp_enqueue_script( 'jquery-masonry' );	
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, NULL );
+		
+		// Masonry
+		wp_register_script( 'masonry-latest', 'http://masonry.desandro.com/masonry.pkgd.min.js', array( 'jquery' ), TRUE);
+		wp_enqueue_script( 'masonry-latest' );
+
 		// FitVids
 		wp_register_script( 'fitvids', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array( 'jquery' ), TRUE);
 		wp_enqueue_script( 'fitvids' );
+
+		// lazyLoad
+		wp_register_script( 'lazyload', get_template_directory_uri() . '/assets/js/vendor/jquery.lazyload.min.js', array( 'jquery' ), TRUE);
+		wp_enqueue_script( 'lazyload' );
+
+		// imagesLoaded
+		wp_register_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/vendor/imagesLoaded.pkgd.min.js', array( 'jquery' ), TRUE);
+		wp_enqueue_script( 'imagesloaded' );
+
 		wp_enqueue_script( 'customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array('jquery'), NULL, true );
 		wp_enqueue_script( 'customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), NULL, true );
 	}
