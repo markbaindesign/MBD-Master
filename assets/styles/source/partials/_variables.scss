@@ -7,6 +7,7 @@
 
 // Structure
 $pageWidth: 100%;
+$block-padding: 1em 3%;
 
 // Text Selection
 $selectionColor: orange;
@@ -16,15 +17,10 @@ $red: green;
 $blue: blue;
 $menu-base-color: #e5e5e5;
 
-// Breakpoints
-@mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 64.375em) { @content; }
-  }
-  @else if $point == medium {
-    @media (min-width: 50em) { @content; }
-  }
-  @else if $point == small {
-    @media (min-width: 37.5em)  { @content; }
-  }
-}
+// Alternate Color Scheme
+
+$base-color-alt: $nephritis;
+$text-color-alt: darken(white, 5%);
+$text-shadow-color-alt: none;
+	// Links
+	$link-color-alt: darken(white, 15%);

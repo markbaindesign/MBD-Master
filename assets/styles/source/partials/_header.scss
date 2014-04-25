@@ -3,6 +3,14 @@
    ========================================================================== */
 
 .site-header {
+	background: $base-color-alt;
+	padding: $block-padding;
+	padding: $block-padding;
+}
+
+.site-header a {
+	color: $link-color-alt;
+	text-decoration: none;
 }
 
 .site-description {

@@ -4,7 +4,7 @@
 
 #page {
 	max-width: $pageWidth;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .content-area {
@@ -21,6 +21,10 @@
 	}
 }
 
+.site-content {
+	padding: $block-padding;
+}
+
 .site-content .widget-area {
 	@include breakpoint(medium) {
 		float: right;
@@ -31,5 +35,11 @@
 
 .site-footer {
 	clear: both;
+	padding: $block-padding;
 	width: 100%;
+}
+
+.site-footer ul {
+	padding: 0;
+	margin-bottom: 1em;
 }

@@ -4,20 +4,20 @@
 
 /*
  * Mixin for easy media queries
- * @include bp(tablet) { SCSS here };
+ * @include breakpoint(large) { SCSS here };
 */
-@mixin bp($point) {
-	@if $point == biggie {
-		@media (max-width : 1600px) { @content; }
-	}
-	@if $point == tablet {
-		@media (max-width : 1024px) { @content; }
-	}
-	@else if $point == phone {
-		@media (max-width : 768px) { @content; }
-	}
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 37.5em)  { @content; }
+  }
 }
-
 /*
  * Mixin for clearfix
  * @include clearfix;
