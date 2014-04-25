@@ -9,7 +9,24 @@
 ?>
 
 	</div><!-- #content -->
-
+	
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div class="widget-container">
+			
+			<div class="container">
+				
+				<div class="masonrycontainer clearfix">
+			
+				
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				
+				
+				</div>
+				
+			</div>
+			
+		</div><!-- .widget-container -->
+	<?php endif; ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	
 		<div class="site-info">

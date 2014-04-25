@@ -39,3 +39,38 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 });
 
 })(jQuery);
+
+jQuery(document).ready(function($) { // Wrap all scripts in this
+
+/*
+	
+	Masonry
+	
+*/
+
+
+		// initialize Masonry
+
+		var $container = $('.masonrycontainer').masonry({
+			itemSelector: '.item'
+		});
+		
+		// layout Masonry again after all images have loaded
+		
+		$container.imagesLoaded( function() {
+		$container.masonry();
+		});
+		
+		$container(".item img").lazyload({
+			effect : "fadeIn"
+		});
+		
+
+/*
+	
+	Sources:
+		http://web.admcomputing.co.uk/masonry/sample-page/
+		http://masonry.desandro.com/appendix.html
+	
+*/
+}); // end Wrap all scripts in this

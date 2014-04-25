@@ -19,7 +19,15 @@ function mb_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-}
+	// Footer Sidebar
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget Area', '_mbbasetheme' ),
+		'id'            => 'sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s item">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );}
 
 /**
  * Remove Dashboard Meta Boxes
@@ -97,6 +105,7 @@ function mb_scripts() {
 
 	if ( !is_admin() ) {
 		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'jquery-masonry' );	
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, NULL );
 		// FitVids
 		wp_register_script( 'fitvids', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array( 'jquery' ), TRUE);
