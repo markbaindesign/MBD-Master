@@ -33,6 +33,27 @@
 	}
 }
 
+/* Header */
+
+.site-description {
+	padding: $block-padding;
+}
+
+.site-title {
+	padding: $block-padding;
+}
+
+h1.menu-toggle {
+	margin: 0;
+	padding:  0 $side-padding;
+}
+
+/* Menu */
+
+ul.nav-menu li a {
+	padding: 5px $side-padding;
+}
+
 .site-footer {
 	clear: both;
 	padding: $block-padding;
@@ -52,7 +73,9 @@
 	@include clearfix();
 }
 
-.masonrycontainer aside {
+.masonrycontainer aside,
+.site-footer > div,
+.site-footer > ul {
 	float: none;
 	padding: 2%;
 	width: 100%;

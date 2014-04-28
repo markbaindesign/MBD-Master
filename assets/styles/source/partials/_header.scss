@@ -4,8 +4,6 @@
 
 .site-header {
 	background: $base-color-alt;
-	padding: $block-padding;
-	padding: $block-padding;
 }
 
 .site-header a {
@@ -17,4 +15,10 @@
 }
 
 .site-title {
+}
+
+h1.menu-toggle {
+	color: $text-color-alt;
+	background: darken($menu-base-color, 40%);
+	padding:  0 $side-padding;
 }

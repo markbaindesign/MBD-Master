@@ -773,6 +773,25 @@ address {
   }
 }
 
+/* Header */
+.site-description {
+  padding: 1em 3%;
+}
+
+.site-title {
+  padding: 1em 3%;
+}
+
+h1.menu-toggle {
+  margin: 0;
+  padding: 0 3%;
+}
+
+/* Menu */
+ul.nav-menu li a {
+  padding: 5px 3%;
+}
+
 .site-footer {
   clear: both;
   padding: 1em 3%;
@@ -798,13 +817,17 @@ address {
   clear: both;
 }
 
-.masonrycontainer aside {
+.masonrycontainer aside,
+.site-footer > div,
+.site-footer > ul {
   float: none;
   padding: 2%;
   width: 100%;
 }
 @media (min-width: 50em) {
-  .masonrycontainer aside {
+  .masonrycontainer aside,
+  .site-footer > div,
+  .site-footer > ul {
     float: left;
     width: 31.25%;
   }
@@ -833,13 +856,17 @@ address {
    ========================================================================== */
 .site-header {
   background: #27ae60;
-  padding: 1em 3%;
-  padding: 1em 3%;
 }
 
 .site-header a {
   color: #d9d9d9;
   text-decoration: none;
+}
+
+h1.menu-toggle {
+  color: #f2f2f2;
+  background: #7f7f7f;
+  padding: 0 3%;
 }
 
 /* ==========================================================================
