@@ -16,13 +16,13 @@
 }
 
 .site-main {
+	padding: $block-padding;
 	@include breakpoint(medium) {
 		margin: 0 25% 0 0;
 	}
 }
 
 .site-content {
-	padding: $block-padding;
 }
 
 .site-content .widget-area {
@@ -97,4 +97,15 @@ ul.nav-menu li a {
 	@include breakpoint(medium) {
 		width: 3.125%;
 	}
+}
+
+/* Search */
+
+input[type=search] {
+    	color: #fff;
+	background: rgba(0,0,0,.1);
+   	border-width: 0;
+    	width: 94%;
+    	padding: $block-padding;
+	margin: $block-padding;
 }

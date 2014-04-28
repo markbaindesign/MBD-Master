@@ -43,7 +43,7 @@
 		</ul><!-- #social -->
 
 		<div id="design">
-			Designed <span class="amp">&amp;</span> coded by <a href="http://markbaindesign.com" title="Visit the website of Mark Bain Design">Mark Bain Design</a>
+			<p>Designed <span class="amp">&amp;</span> coded by <a href="http://markbaindesign.com" title="Visit the website of Mark Bain Design">Mark Bain Design</a></p>
 		</div><!-- #design -->
 
 		<div id="back-to-top" >
