@@ -150,3 +150,20 @@ function mb_remove_more_jump_link( $link ) {
 	}
 	return $link;
 }
+
+/**
+ * Custom body classes
+ */
+function mbdmaster_body_classes( $classes ) {
+
+	/*
+	 * Since we used 'option' in add_setting arguments array
+	 * we retrieve the value by using get_option function
+	 */
+	$mbdmaster_settings = get_option( 'mbdmaster_settings' );	
+	
+	$classes[] = $mbdmaster_settings['layout_setting'];
+	
+	return $classes;
+
+}	

@@ -60,6 +60,9 @@ function _mbbasetheme_setup() {
 	// Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 
+	// Add Body Classes
+	add_filter( 'body_class', 'mbdmaster_body_classes' );
+
 	// Add Image Sizes
 	// add_image_size( $name, $width = 0, $height = 0, $crop = false );
 
@@ -89,6 +92,19 @@ function _mbbasetheme_setup() {
 	// Show Kitchen Sink in WYSIWYG Editor
 	// Function location: /lib/theme-functions.php
 	add_filter( 'tiny_mce_before_init', 'mb_unhide_kitchensink' );
+
+	// Custom Search Form
+	// Function location: /lib/inc/template-tags.php
+	add_filter( 'get_search_form', 'mbdmaster_search_form' );
+
+	// Comment Form -- HTML5 Placeholders
+	add_filter( 'comment_form_default_fields', 'mbdmaster_comment_form' );
+
+	//  Comment Field
+	add_filter( 'comment_form_field_comment', 'mbdmaster_comment_field' );
+	// Hide Admin Bar
+	// Let's face it: it's ugly
+	add_filter( 'show_admin_bar', '__return_false' );
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(

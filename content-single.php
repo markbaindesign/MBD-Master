@@ -9,7 +9,8 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php _mbbasetheme_posted_on(); ?>
+			<?php mbdmaster_posted_on(); ?>
+
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

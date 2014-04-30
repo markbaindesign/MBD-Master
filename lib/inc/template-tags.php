@@ -39,7 +39,7 @@ if ( ! function_exists( '_mbbasetheme_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  */
-function _mbbasetheme_post_nav() {
+function mbdmaster_post_nav() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -131,3 +131,21 @@ function _mbbasetheme_category_transient_flusher() {
 }
 add_action( 'edit_category', '_mbbasetheme_category_transient_flusher' );
 add_action( 'save_post',     '_mbbasetheme_category_transient_flusher' );
+
+// 1.7 Search form
+
+function mbdmaster_search_form( $form ) {
+
+	$var = home_url( '/' );
+	
+    $form = '<form role="search" method="get" class="search-form" action="' . $var . '">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<i id="search-icon" aria-hidden="true" class="icon-search icon-left"></i><input type="search" class="search-field" placeholder="Type your search here." value="" name="s" title="Search for:">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>';
+
+    return $form;
+}
+

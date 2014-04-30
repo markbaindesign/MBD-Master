@@ -41,9 +41,12 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				) );
+					'style'      	=> 'ol',
+					'short_ping' 	=> true,
+					'callback'      => 'mbdmaster_custom_comment', // Custom comment function
+					'avatar_size'	=> 66,
+					'per_page'	=> 10
+				), $comments )
 			?>
 		</ol><!-- .comment-list -->
 

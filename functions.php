@@ -25,6 +25,16 @@ require get_template_directory() . '/lib/theme-functions.php';
 require get_template_directory() . '/lib/theme-helpers.php';
 
 /**
+ * Custom comment.
+ */
+require get_template_directory() . '/lib/inc/custom-comment.php';
+
+/**
+ * Custom meta.
+ */
+require get_template_directory() . '/lib/inc/custom-meta.php';
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/lib/inc/custom-header.php';

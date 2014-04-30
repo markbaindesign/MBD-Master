@@ -8,6 +8,12 @@
  */
 
 /**
+ * Debug
+ *
+ */
+error_reporting(E_ALL | E_STRICT);
+
+/**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
  * @param array $args Configuration arguments.
