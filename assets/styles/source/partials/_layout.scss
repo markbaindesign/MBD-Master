@@ -7,7 +7,13 @@
 	margin: 0 auto;
 }
 
-.content-area {
+.site-content {
+
+}
+
+/* Right sidebar */
+
+.right-sidebar .content-area {
 	@include breakpoint(medium) {
 		float: left;
 		margin: 0 -25% 0 0;
@@ -15,19 +21,41 @@
 	width: 100%;
 }
 
-.site-main {
+.right-sidebar .site-main {
 	padding: $block-padding;
 	@include breakpoint(medium) {
 		margin: 0 25% 0 0;
 	}
 }
 
-.site-content {
-}
-
-.site-content .widget-area {
+.right-sidebar .site-content .widget-area {
 	@include breakpoint(medium) {
 		float: right;
+		overflow: hidden;
+		width: 25%;
+	}
+}
+
+/* Left sidebar */
+
+.left-sidebar .content-area {
+	@include breakpoint(medium) {
+		float: right;
+		margin: 0 -25% 0 0;
+	}
+	width: 100%;
+}
+
+.left-sidebar .site-main {
+	padding: $block-padding;
+	@include breakpoint(medium) {
+		margin: 0;
+	}
+}
+
+.left-sidebar .site-content .widget-area {
+	@include breakpoint(medium) {
+		float: left;
 		overflow: hidden;
 		width: 25%;
 	}
