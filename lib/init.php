@@ -108,18 +108,19 @@ function _mbbasetheme_setup() {
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
-		'comment-list',
 		'search-form',
 		'comment-form',
 		'gallery',
+		//'caption',
+		'comment-list'
 	) );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	// add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
 	// Enqueue scripts
 	// Function location: /lib/theme-functions.php
-	add_action( 'wp_enqueue_scripts', 'mb_scripts' );
+	add_action( 'wp_enqueue_scripts', 'mbdmaster324_scripts' );
 
 	// Remove Query Strings From Static Resources
 	// Function location: /lib/theme-functions.php
@@ -129,6 +130,9 @@ function _mbbasetheme_setup() {
 	// Remove Read More Jump
 	// Function location: /lib/theme-functions.php
 	add_filter( 'the_content_more_link', 'mb_remove_more_jump_link' );
+
+	// Typekit Webfonts Inline Script
+	// add_action( 'wp_head', 'mbdmaster324_typekit_inline' );
 
 }
 endif; // _mbbasetheme_setup

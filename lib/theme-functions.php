@@ -96,38 +96,52 @@ function mb_unhide_kitchensink( $args ) {
 /**
  * Enqueue scripts
  */
-function mb_scripts() {
-	wp_enqueue_style( 'mb-style', get_stylesheet_uri() );
+function mbdmaster324_scripts() {
+	
+	global $wp_styles;
+
+	// Load the main stylesheet
+	wp_enqueue_style( 'mbdmaster324-style', get_stylesheet_directory_uri() . '/style.css' );
+
+	// Add conditional IE stylesheet
+	wp_enqueue_style( 'mbdmaster324-style-ie', get_stylesheet_directory_uri() . "/ie.css", array( 'mbdmaster324' )  );
+    $wp_styles->add_data( 'mbdmaster324-style--ie', 'conditional', '(lt IE 9) & (!IEMobile)' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if ( !is_admin() ) {
-		wp_enqueue_script( 'jquery' );
-		// wp_enqueue_script( 'jquery-masonry' );	
-		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, NULL );
 		
-		// Masonry
-		wp_register_script( 'masonry-latest', 'http://masonry.desandro.com/masonry.pkgd.min.js', array( 'jquery' ), TRUE);
-		wp_enqueue_script( 'masonry-latest' );
+		wp_enqueue_script( 'jquery' );
 
-		// FitVids
-		wp_register_script( 'fitvids', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array( 'jquery' ), TRUE);
-		wp_enqueue_script( 'fitvids' );
+		// Typekit script 
+		// wp_enqueue_script( 'mbdmaster324-style-typekit', '//use.typekit.net/xxxxxxx.js');
 
-		// lazyLoad
-		wp_register_script( 'lazyload', get_template_directory_uri() . '/assets/js/vendor/jquery.lazyload.min.js', array( 'jquery' ), TRUE);
-		wp_enqueue_script( 'lazyload' );
+		// Enqueue javascript plugins
+		/** 
+		 * Ensure all plugins you want to enqueue are listed in Gruntfile.js!
+		 */
+		wp_enqueue_script( 'mbdmaster324-customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array(), NULL, true );
+		
+		// Custom scripts
+		wp_enqueue_script( 'mbdmaster324_customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array(), NULL, true );
 
-		// imagesLoaded
-		wp_register_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/vendor/imagesLoaded.pkgd.min.js', array( 'jquery' ), TRUE);
-		wp_enqueue_script( 'imagesloaded' );
-
-		wp_enqueue_script( 'customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array('jquery'), NULL, true );
-		wp_enqueue_script( 'customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), NULL, true );
 	}
 }
+
+/**
+ * Add Typekit Webfonts Inline Script
+ */	
+function mbdmaster324_typekit_inline() {
+	
+	/* Conditionally loads the Typekit script inline if fonts are enqueued */
+	
+	if ( wp_script_is( 'mbdmaster324-typekit', 'done' ) ) { 
+		echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>'; 
+	}
+}
+
 
 /**
  * Remove Query Strings From Static Resources
