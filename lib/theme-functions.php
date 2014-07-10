@@ -122,10 +122,10 @@ function mbdmaster324_scripts() {
 		/** 
 		 * Ensure all plugins you want to enqueue are listed in Gruntfile.js!
 		 */
-		wp_enqueue_script( 'mbdmaster324-customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array(), NULL, true );
+		wp_enqueue_script( 'mbdmaster324-customplugins', get_stylesheet_directory_uri() . '/assets/js/plugins.min.js', array());
 		
 		// Custom scripts
-		wp_enqueue_script( 'mbdmaster324_customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array(), NULL, true );
+		wp_enqueue_script( 'mbdmaster324_customscripts', get_stylesheet_directory_uri() . '/assets/js/main.min.js', array() );
 
 	}
 }
