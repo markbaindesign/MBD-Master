@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: { livereload: true },
-                files: ['style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: [ '*.php', 'style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 
@@ -153,5 +153,6 @@ module.exports = function(grunt) {
 
     // register task
     grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']);
+	 grunt.loadNpmTasks('grunt-notify'); 
 
 };
