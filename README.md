@@ -1,6 +1,10 @@
 # MBD Master
 
-Version: 0.0.0
+Version: 2.0
+
+This version incorporates features of the following projects:
+
+- Mark Bain Design (Longneck)
 
 ## Author:
 
