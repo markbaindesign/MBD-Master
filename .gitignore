@@ -1,5 +1,9 @@
 .DS_Store
 node_modules
 .sass-cache
-.idea
 *~
+*.swp
+style.css
+assets/js/*.min.js
+assets/js/*.min.map
+assets/styles/build/
