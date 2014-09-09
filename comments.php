@@ -67,6 +67,14 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', '_mbbasetheme' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+<?php 
+			
+			$comment_args = array(
+				'comment_notes_before' => '<p>Don\'t worry; your email address won\'t be published.</p>',				
+				'comment_notes_after' => ''
+	);
+
+	comment_form( $comment_args );
+?>
 
 </div><!-- #comments -->
