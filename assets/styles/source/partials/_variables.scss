@@ -5,21 +5,49 @@
 // Font Face
 // @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
 
-// Structure
+$container-width: 64em; // Set max width of container element in ems.
 $pageWidth: 100%;
+$textblock-width: 100%;
 $block-padding: 1em 3%;
-$side-padding:3%;
+$side-padding: 0 3%;
+
+
+
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+$white: #f0f0f0;
+$light-grey: #e4e4e4;
+$mid-grey: #8A959E;
+$black: #333;
+$red: green;
+$blue: blue;
+$orange: orange;
 
 // Text Selection
 $selectionColor: orange;
 
-// Colors
-$red: green;
-$blue: blue;
+	// Borders
+	$border-color: $light-grey;
 
-// Menu 
+	// CTAs
+	$color-primary-cta: $white;
+	$color-bg-primary-cta: $orange;
+	$color-secondary-cta-1: $mid-grey;
+	$color-secondary-cta-2: $white;
+	$color-bg-secondary-cta: transparent;
 
-$menu-base-color: #7F8C8D;
+	// Menu 
+	$menu-base-color: $white;
+
+	// Anchors (Links)
+	$link-color: $orange;
+	$link-decoration: none;
+	$hover-color: $mid-grey;
+	$hover-decoration: underline;
+
 
 // Alternate Color Scheme
 
