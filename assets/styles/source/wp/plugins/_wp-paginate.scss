@@ -12,26 +12,26 @@
 	}
 	
 	span {
-		color: darken( $mid-grey, 20%);
-		border: 1px solid darken( $mid-grey, 20%);
-		background: $light-grey;
+		color: darken( $color_grey, 20%);
+		border: 1px solid darken( $color_grey, 20%);
+		background: $color_grey-light;
 	}
 
 	a {
 
 		&:link {
 			text-decoration: none;
-			background: $light-grey;
+			background: $color_grey-light;
 		}
 
 		&:link, &:visited,  {
-			color: $mid-grey;
-			border: 1px solid $mid-grey;	
+			color: $color_grey;
+			border: 1px solid $color_grey;	
 		}
 
 		&:hover {
-			color: darken( $mid-grey, 20%);
-			border: 1px solid darken( $mid-grey, 20%);
+			color: darken( $color_grey, 20%);
+			border: 1px solid darken( $color_grey, 20%);
 		}
 
 	}

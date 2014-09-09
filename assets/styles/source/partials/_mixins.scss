@@ -145,20 +145,20 @@
 	
 	&:link, &:visited {
 
-		background: $color-bg-primary-cta;
+		background: 	$color_background-cta;
 		text-transform: uppercase;
-		color: $color-primary-cta;
+		color: $color_text-cta;
 		font-weight: bold;
 		text-decoration: none;
 		letter-spacing: 1px;
 	}
 
 	&:hover {
-		background: darken($color-bg-primary-cta, 3%);
+		background: darken(	$color_background-cta, 3%);
 	}
 
 	&:active {
-		background: darken($color-bg-primary-cta, 5%);
+		background: darken(	$color_background-cta, 5%);
 	}
 
 }
@@ -172,21 +172,21 @@
 
 		// background: $color-bg-secondary-cta;
 		text-transform: uppercase;
-		color: $color-secondary-cta-1;
-		box-shadow: inset 0 0 3px $color-secondary-cta-1;
+		color: $color_text-cta-2;
+		box-shadow: inset 0 0 3px $color_text-cta-2;
 		font-weight: bold;
 		text-decoration: none;
 		letter-spacing: 1px;
 
 		@include breakpoint( tablet ) {
-			color: $color-secondary-cta-2;
-			box-shadow: inset 0 0 3px $color-secondary-cta-2;
+			color: $color_text-cta-2;
+			box-shadow: inset 0 0 3px $color_text-cta-2;
 		}
 	}
 
 	&:hover {
 		background: rgba(0,0,0,.1);
-		color: darken($color-secondary-cta-1, 10%);
+		color: darken($color_text-cta-2, 10%);
 		@include breakpoint( tablet ) {
 			color: #fff;
 			box-shadow: inset 0 0 5px #fff;
@@ -195,9 +195,9 @@
 
 	&:active {
 		background: rgba(0,0,0,.2);		
-		color: darken($color-secondary-cta-1, 20%);
+		color: darken($color_text-cta-2, 20%);
 		@include breakpoint( tablet ) {
-			background: darken($color-bg-secondary-cta, 5%);
+			background: darken($color_background-cta-2, 5%);
 		}
 	}
 }
@@ -251,9 +251,9 @@
 	display: block;
 	width: 100%;
 
-		background: $color-bg-primary-cta;
+		background: 	$color_background-cta;
 		text-transform: uppercase;
-		color: $color-primary-cta;
+		color: $color_text-cta;
 		font-weight: bold;
 		text-decoration: none;
 		letter-spacing: 1px;
@@ -263,11 +263,11 @@
 	}
 
 	&:hover {
-		background: darken($color-bg-primary-cta, 3%);
+		background: darken($color_background-cta, 3%);
 	}
 
 	&:active {
-		background: darken($color-bg-primary-cta, 5%);
+		background: darken($color_background-cta, 5%);
 	}
 }
 

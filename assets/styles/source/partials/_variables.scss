@@ -18,41 +18,49 @@ $side-padding: 0 3%;
    Colors
    ========================================================================== */
 
-$white: #f0f0f0;
-$light-grey: #e4e4e4;
-$mid-grey: #8A959E;
-$black: #333;
-$red: green;
-$blue: blue;
-$orange: orange;
+/* Import libraries */
 
-// Text Selection
-$selectionColor: orange;
+	// @import "partials/color-me-sass";
 
-	// Borders
-	$border-color: $light-grey;
+/* Assign values to color names */
 
-	// CTAs
-	$color-primary-cta: $white;
-	$color-bg-primary-cta: $orange;
-	$color-secondary-cta-1: $mid-grey;
-	$color-secondary-cta-2: $white;
-	$color-bg-secondary-cta: transparent;
+	/* Shades */
+	
+	$color_black: 				#000000;		/* example */
+	$color_white: 				#ffffff;		/* example */
+	
+	$color_grey-dark: 		darken($color_white, 80%);
+	$color_grey: 				darken($color_white, 50%);
+	$color_grey-light: 		darken($color_white, 50%);
+	
+	/* Colors */
+	
+	$color_red: 				red; 			/* example */
+	$color_blue: 				blue; 		/* example */
+	$color_orange:	 			orange; 		/* example */
+	$color_green:	 			green; 		/* example */
 
-	// Menu 
-	$menu-base-color: $white;
+/* Link color names to descriptive names 
+	Use these values outside of this stylesheet!
+*/
 
-	// Anchors (Links)
-	$link-color: $orange;
-	$link-decoration: none;
-	$hover-color: $mid-grey;
-	$hover-decoration: underline;
-
-
-// Alternate Color Scheme
-
-$base-color-alt: $nephritis;
-$text-color-alt: darken(white, 5%);
-$text-shadow-color-alt: none;
-	// Links
-	$link-color-alt: darken(white, 15%);
+	$color_text:							$color_black; 
+	$color_text-cta:						$color_black; 
+	$color_text-cta-2:					$color_black; 
+	$color_text-anchor:					$color_black; 
+	$color_text-header:					$color_white; 
+	$color_text-footer:					$color_white; 
+	$color_text-anchor-visited:		$color_black; 
+	$color_text-anchor-hover:			$color_black; 
+	$color_text-anchor-active:			$color_black; 
+	
+	$color_text-selection: 				$color_orange;
+	
+	$color_background:					$color_white;
+	$color_background-cta:				$color_white;
+	$color_background-cta-2:			$color_white;
+	$color_background-nav:				$color_grey-light;
+	$color_background-header:			$color_red;
+	$color_background-footer:			$color_blue;
+	
+	$color_border: 						$color_grey-light;

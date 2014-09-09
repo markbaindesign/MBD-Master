@@ -2,13 +2,21 @@
    Layout
    ========================================================================== */
 
+html, 
+body,
 #page {
-	max-width: $pageWidth;
-	margin: 0 auto;
+	height: 100%; /* Important for sticky footer */
 }
 
-.site-content {
+.section {
+	width: 100%;
+	padding: 1em 3%;
 
+	.container {
+		max-width: $container-width;
+		margin: 0 auto; // Centre the container on the page.
+		@include clearfix; // Likely to contain floated elements i.e. columns
+	}
 }
 
 /* Right sidebar */
@@ -63,13 +71,7 @@
 
 /* Header */
 
-.site-description {
-	padding: $block-padding;
-}
 
-.site-title {
-	padding: $block-padding;
-}
 
 h1.menu-toggle {
 	margin: 0;

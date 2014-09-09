@@ -3,22 +3,6 @@
    ========================================================================== */
 
 .site-header {
-	background: $base-color-alt;
-}
-
-.site-header a {
-	color: $link-color-alt;
-	text-decoration: none;
-}
-
-.site-description {
-}
-
-.site-title {
-}
-
-h1.menu-toggle {
-	color: $text-color-alt;
-	background: darken($menu-base-color, 40%);
-	padding:  0 $side-padding;
+	color: $color_text-header;
+	background: $color_background-header;
 }

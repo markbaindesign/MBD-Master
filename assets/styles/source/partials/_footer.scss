@@ -3,32 +3,6 @@
    ========================================================================== */
 
 .site-footer {
-	background: $base-color-alt;
-	color: $text-color-alt;
-}
-
-.site-footer a {
-	color: $link-color-alt;
-	text-decoration: none;
-	text-shadow: 1px 1px 0 $text-shadow-color-alt;
-	border-bottom: 1px dotted $link-color-alt; 
-}
-
-.site-footer a:hover {
-	color: darken($link-color-alt, 10%);
-	border-bottom: 1px solid  darken($link-color-alt, 10%); 
-}
-
-.site-footer a:active {
-	color: darken($link-color-alt, 15%);
-	border-bottom: 1px solid  darken($link-color-alt, 15%); 
-}
-
-.site-footer li {
-	list-style-type: none;
-}
-
-.site-footer > div,
-.site-footer > ul {
-	margin-bottom: 1.5em;
+	color: $color_text-footer;
+	background: $color_background-footer;
 }

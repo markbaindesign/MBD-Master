@@ -17,17 +17,23 @@
 
 body { }
 
+::-moz-selection {
+	background: $color_text-selection;
+}
 
+::selection {
+	background: $color_text-selection;
+}
 /* ==========================================================================
    Links
    ========================================================================== */
 
 a,
 a:visited {
-	color: $red;
+	color: $color_text-anchor;
 }
 a:hover {
-	color: $blue;
+	color: $color_text-anchor-hover;
 }
 
 

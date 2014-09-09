@@ -6,7 +6,7 @@
 	clear: both;
 	display: block;
 	width: 100%;
-	 background: $menu-base-color;
+	 background: $color_background-nav;
 }
 
 .main-navigation ul {
@@ -32,36 +32,36 @@
 
 }
 .main-navigation ul a {
-	 border-bottom: 1px solid darken($menu-base-color, 4%);
-	 border-top: 1px solid lighten($menu-base-color, 2%);
+	 border-bottom: 1px solid darken($color_background-nav, 4%);
+	 border-top: 1px solid lighten($color_background-nav, 2%);
  }
 
 .main-navigation ul ul a {
-	 background: darken($menu-base-color, 2%);
-	 border-top: 1px solid darken($menu-base-color, 4%);
-	 border-bottom: 1px solid lighten($menu-base-color, 2%);
+	 background: darken($color_background-nav, 2%);
+	 border-top: 1px solid darken($color_background-nav, 4%);
+	 border-bottom: 1px solid lighten($color_background-nav, 2%);
  }
 
 .main-navigation ul ul ul a {
-	 background: darken($menu-base-color, 4%);
-	 border-top: 1px solid darken($menu-base-color, 6%);
-	 border-bottom: 1px solid darken($menu-base-color, 4%);
+	 background: darken($color_background-nav, 4%);
+	 border-top: 1px solid darken($color_background-nav, 6%);
+	 border-bottom: 1px solid darken($color_background-nav, 4%);
  }
 
 .main-navigation ul ul li {
- 	background: darken($menu-base-color, 10%);
+ 	background: darken($color_background-nav, 10%);
 }
 
 .main-navigation li:hover > a {
-	 background: darken($menu-base-color, 2%);
+	 background: darken($color_background-nav, 2%);
  }
 
 .main-navigation ul ul l:hover > a {
-	 background: darken($menu-base-color, 4%);
+	 background: darken($color_background-nav, 4%);
  }
 
  .main-navigation ul ul ul li:hover > a {
-	 background: darken($menu-base-color, 6%);
+	 background: darken($color_background-nav, 6%);
  }
 
 .main-navigation ul ul a:hover {
