@@ -86,9 +86,11 @@ module.exports = function(grunt) {
                 files: {
                     'assets/js/plugins.min.js': [
                         'assets/js/source/plugins.js',
-                        'assets/js/vendor/navigation.js',
-                        'assets/js/vendor/skip-link-focus-fix.js',
-                        // 'assets/js/vendor/yourplugin/yourplugin.js',
+								'assets/js/vendor/modernizr.custom.36143.js',
+                       	'assets/js/vendor/responsive-nav.js',
+								'assets/js/vendor/imagesloaded.pkgd.min.js',
+								'assets/js/vendor/jquery.fitvids.js',                       
+		 // 'assets/js/vendor/yourplugin/yourplugin.js',
                     ]
                 }
             },
