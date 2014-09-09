@@ -15,7 +15,7 @@ div.wpcf7 {
 }
 
 div.wpcf7-response-output {
-	@extend .textblock;
+	@extend .textblock !optional;
 	margin: 0;
 	padding: $block-padding;
 }
