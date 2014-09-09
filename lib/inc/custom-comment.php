@@ -2,11 +2,14 @@
 // 1.8 Comment Form -- HTML5 Placeholders
 
 function mbdmaster_comment_form($fields) {
-    $fields['author'] = 
+
+	$commenter = wp_get_current_commenter();
+	$req = get_option( 'require_name_email' );
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+
+$fields['author'] = 
         '<p class="comment-form-author">
-            <input required minlength="3" maxlength="30" placeholder="Your Name*" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-    '" size="30"' . $aria_req . ' />
-        </p>';
+            <input required placeholder="Your Name*" id="author" name="author" type="text" value="" aria-required="true"></p>';
  
     $fields['email'] = 
         '<p class="comment-form-email">
@@ -29,7 +32,7 @@ function mbdmaster_comment_field($comment_field) {
  
     $comment_field = 
         '<p class="comment-form-comment">
-            <textarea required placeholder="Enter Your Comment" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+            <textarea required placeholder="Your Comment" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
         </p>';
  
     return $comment_field;

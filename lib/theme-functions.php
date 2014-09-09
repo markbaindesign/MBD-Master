@@ -114,6 +114,7 @@ function mbdmaster324_scripts() {
 	if ( !is_admin() ) {
 		
 		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'jquery-masonry' );	
 
 		// Typekit script 
 		// wp_enqueue_script( 'mbdmaster324-style-typekit', '//use.typekit.net/xxxxxxx.js');
@@ -122,10 +123,10 @@ function mbdmaster324_scripts() {
 		/** 
 		 * Ensure all plugins you want to enqueue are listed in Gruntfile.js!
 		 */
-		wp_enqueue_script( 'mbdmaster324-customplugins', get_stylesheet_directory_uri() . '/assets/js/plugins.min.js', array());
+		wp_enqueue_script( 'mbdmaster324-customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array());
 		
 		// Custom scripts
-		wp_enqueue_script( 'mbdmaster324_customscripts', get_stylesheet_directory_uri() . '/assets/js/main.min.js', array() );
+		wp_enqueue_script( 'mbdmaster324_customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array() );
 
 	}
 }
