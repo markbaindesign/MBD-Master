@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying Archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package _mbbasetheme
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
