@@ -1,7 +1,9 @@
 {
   "name": "wordpress-starter-theme",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+  		"bower": "~1.3.9" 
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",
