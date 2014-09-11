@@ -16,6 +16,10 @@
 	margin: 0;
 	padding-left: 0;
 	li {
+		padding: 3px;
+		text-align: center;
+		background: $color_background-nav;
+		@include border-radius(5px);
 		@include breakpoint(tablet){
 			display: inline-block;
 			margin-right: 20px;

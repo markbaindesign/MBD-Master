@@ -1,6 +1,31 @@
 ul.social-media-links {
 	@extend .nobullets !optional;
 	font-size: 2em;
+	@include breakpoint( tablet ){
+		font-size: 1.4em;
+	}
+
+	li {
+		display: inline-block;
+		text-align: center;
+		a {
+
+			&:link {
+				text-decoration: none;
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
+
+// Tweaks
+
+ul.social-media-links {
+	float: right;
+	width: 5em;
 
 	li {
 		display: inline-block;
