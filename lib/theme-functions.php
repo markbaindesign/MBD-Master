@@ -113,8 +113,9 @@ function mbdmaster324_scripts() {
 
 	if ( !is_admin() ) {
 		
-		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'jquery-masonry' );	
+		// wp_enqueue_script( 'jquery' );
+		// wp_enqueue_script( 'jquery-masonry' );	
+
 
 		// Typekit script 
 		// wp_enqueue_script( 'mbdmaster324-style-typekit', '//use.typekit.net/xxxxxxx.js');
