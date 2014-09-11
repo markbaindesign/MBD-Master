@@ -17,12 +17,20 @@
 		</div><!-- .widget-container -->
 	<?php endif; ?>
 
+	<!-- Quotes section -->
+	<div id="quotes" class="section">
+		<div class="container">
+			<?php get_template_part( 'content', 'quotes' ); ?>
+		</div><!-- .container -->
+	</div><!-- #signup .section -->
+
 	<!-- Newsletter signup section -->
 	<div id="signup" class="section">
 		<div class="container">
 			<?php get_template_part( 'content', 'signup-form' ); ?>
 		</div><!-- .container -->
 	</div><!-- #signup .section -->
+
 	<footer id="colophon" class="section site-footer" role="contentinfo">
 		<div class="container">
 		<div class="site-info">
