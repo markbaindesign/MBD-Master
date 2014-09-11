@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+#signup {
+	background: $color_grey-light;
+}
+
+form {
+	@include clearfix;
+
+
+	label {
+		display: block;
+		opacity: .5;
+		text-align: left;
+		padding-bottom: 5px;
+		@include breakpoint( mobile ) {
+			display: none;
+		}
+		@include breakpoint( tablet ) {
+			display: block;
+		}	
+	}
+
+	p {
+	
+			&.emailaddress { /* User's email address */
+				@include breakpoint( mobile ) {
+					display: table-cell;
+					width: 100%;
+					padding-right: 10px;
+				}
+				@include breakpoint( tablet ) {
+					width: 50%;
+				}
+			}
+
+			&.username { /* User's name */
+				@include breakpoint( mobile ) {
+					display: none;
+				}
+				@include breakpoint( tablet ) {
+					display: table-cell;
+					width: 50%;
+					padding-right: 10px;
+				}
+			}
+			
+			&.signin { /* The sign up button */
+				display: block;
+				width: 100%;
+				@include breakpoint( mobile ) {
+					display: table-cell;
+					width: auto;
+				}
+				@include breakpoint( tablet ) {
+					margin: 0;
+					padding: 0;
+					vertical-align: bottom;
+					input {
+						margin: 0;
+					}
+				}
+			}
+
+			span {
+				@include breakpoint( mobile ) {
+					padding: 1em 0;
+					display: table-cell;					
+					text-align: left;
+					margin-left: 10px;
+				}
+			}		
+	}
+}
+
+input {
+	padding: $block-padding;
+	border: none; // 1px solid $light-grey
+	width: 100%;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, .4);
+	color: $color_black;
+	
+	&[type=submit] {
+		@include cta-primary;
+		border: none;
+		@include breakpoint( mobile ) {
+			width: auto;
+		}
+	}
+}
+
+#final-signup {
+
+
+	.signin {
+		@include clearfix;
+	}
+	
+	@include breakpoint( tablet ) {
+		
+		form, .content {
+			width: 50%;
+		}
+
+		form	{
+			float: right;
+		}
+
+		.content {
+			float: left;
+		}
+
+	}
+
+}

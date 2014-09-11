@@ -12,7 +12,13 @@ $block-padding: 1em 3%;
 $side-padding: 0 3%;
 $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 
+	/* Masonry layouts */
 
+	// Apply these to the .grid-sizer and .gutter-sizer elements, plus the items themselves.
+
+	$grid-sizer-1: 47.5%; // 2 columns, gutter x1
+	$grid-sizer-2: 30%; // 3 columns, gutter x2
+	$gutter-sizer-1: 5%; // width of gutter
 
 
 /* ==========================================================================

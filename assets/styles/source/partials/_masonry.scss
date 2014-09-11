@@ -1,0 +1,44 @@
+// Base
+
+.masonrycontainer {
+	@include clearfix;
+
+	aside {
+		width: 100%;
+		@include breakpoint(mobile-horizontal) {
+			width: $grid-sizer-1;
+		}
+		@include breakpoint(tablet-horizontal) {
+			width: $grid-sizer-2;
+		}
+	}
+}
+
+
+
+.grid-sizer {
+	width: 100%;
+	@include breakpoint(mobile-horizontal) {
+		width: $grid-sizer-1;
+	}
+	@include breakpoint(tablet-horizontal) {
+		width: $grid-sizer-2;
+	}
+}
+
+.gutter-sizer {
+	width: 0; // No gutter
+	@include breakpoint(mobile-horizontal) {
+		width: $gutter-sizer-1;
+	}
+}
+
+// Look
+
+#footer-widgets {
+	background: $color_grey;
+
+	aside {
+		background: $color_grey-light;
+	}
+}
