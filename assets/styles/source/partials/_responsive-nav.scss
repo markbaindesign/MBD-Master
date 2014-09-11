@@ -6,20 +6,31 @@
   width: 100%;
   display: block;
   list-style: none;
+
+  ul ul {
+	  @include breakpoint(tablet){
+		  position: absolute;
+		  top: 0;
+		  left: $width_menu-item;
+	  }
+  }
 }
 
 .nav-collapse li {
-  width: 100%;
+  width: $width_menu-item;
   display: block;
 }
 
 .js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: none;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
+  	clip: rect(0 0 0 0);
+  	max-height: none;
+  	position: absolute;
+  	display: block;
+  	overflow: hidden; // hides menu until toggle is clicked
+  	zoom: 1;
+  	@include breakpoint(tablet){
+		overflow: visible; // for dropdown menus 
+	}	  
   &.closed {
 		max-height: 0;
 		@include breakpoint(tablet){

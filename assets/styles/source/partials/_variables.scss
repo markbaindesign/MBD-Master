@@ -10,6 +10,7 @@ $pageWidth: 100%;
 $textblock-width: 100%;
 $block-padding: 1em 3%;
 $side-padding: 0 3%;
+$width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 
 
 
@@ -31,7 +32,7 @@ $side-padding: 0 3%;
 	
 	$color_grey-dark: 		darken($color_white, 80%);
 	$color_grey: 				darken($color_white, 50%);
-	$color_grey-light: 		darken($color_white, 50%);
+	$color_grey-light: 		darken($color_white, 10%);
 	
 	/* Colors */
 	
