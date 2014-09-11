@@ -56,6 +56,7 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-cta-2:					$color_black; 
 	$color_text-anchor:					$color_black; 
 	$color_text-header:					$color_white; 
+	$color-text-pre-header:				$emerald;	
 	$color_text-footer:					$color_white; 
 	$color_text-anchor-visited:		$color_black; 
 	$color_text-anchor-hover:			$color_black; 
@@ -64,10 +65,11 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-selection: 				$color_orange;
 	
 	$color_background:					$color_white;
-	$color_background-cta:				$color_white;
+	$color_background-cta:				$orange;
 	$color_background-cta-2:			$color_white;
-	$color_background-nav:				$color_grey-light;
-	$color_background-header:			$color_red;
-	$color_background-footer:			$color_blue;
+	$color_background-nav:				darken( $nephritis, 5%);
+	$color_background-header:			$emerald;
+	$color-background-pre-header:		$nephritis;
+	$color_background-footer:			$nephritis;
 	
 	$color_border: 						$color_grey-light;
