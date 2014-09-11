@@ -13,6 +13,12 @@
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	li {
+		@include breakpoint(tablet){
+			display: inline;
+			width: auto;
+		}
+	}
 }
 
 .main-navigation li {
@@ -103,9 +109,7 @@
 		display: block;
 	}
 
-	.main-navigation ul {
-		display: none;
-	}
+
 }
 
 .site-main .comment-navigation,
