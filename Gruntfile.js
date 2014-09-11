@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: { livereload: true },
-                files: [ '*.php', 'style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 
@@ -85,11 +85,10 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'assets/js/plugins.min.js': [
-                        'assets/js/source/plugins.js',
-								'assets/js/vendor/modernizr.custom.36143.js',
+                        // 'assets/js/source/plugins.js',
                        	'assets/js/vendor/responsive-nav.js',
-								'assets/js/vendor/imagesloaded.pkgd.min.js',
-								'assets/js/vendor/jquery.fitvids.js',                       
+								// 'assets/js/vendor/imagesloaded.pkgd.min.js',
+								// 'assets/js/vendor/jquery.fitvids.js',                       
 		 // 'assets/js/vendor/yourplugin/yourplugin.js',
                     ]
                 }
