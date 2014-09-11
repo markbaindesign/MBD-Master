@@ -1,25 +1,37 @@
 /*! responsive-nav.js 1.0.32 by @viljamis */
 
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
+.nav-collapse {
+	
+	li {
+	  width: $width_menu-item;
+	  display: block;
+	}
 
-  ul ul {
-	  @include breakpoint(tablet){
-		  position: absolute;
-		  top: 0;
-		  left: $width_menu-item;
-	  }
-  }
+	ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: block;
+		list-style: none;
+
+		ul {
+			
+			ul {
+				@include breakpoint(tablet){
+					position: absolute;
+					top: 0;
+					left: $width_menu-item;
+				}
+			}
+		}
+	}
+
+	.opened {
+  		max-height: 9999px;
+	}
 }
 
-.nav-collapse li {
-  width: $width_menu-item;
-  display: block;
-}
+
 
 .js .nav-collapse {
   	clip: rect(0 0 0 0);
@@ -42,13 +54,13 @@
 	}
 }
 
-.nav-collapse.opened {
-  max-height: 9999px;
-}
+
 
 .disable-pointer-events {
   pointer-events: none !important;
 }
+
+/* Navigation toggle */
 
 #nav-toggle {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
