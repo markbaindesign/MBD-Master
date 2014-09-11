@@ -1,21 +1,16 @@
-(function($) {
 /*
 ===============================================
 		
-		FitVids  
+		Remove "no-js" class  
 	
 ===============================================
-*/		
+*/	
 
-jQuery( document ).ready( function( $ ) { // Wrap all scripts in this
-	
-	// Script
-	$(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
-    $("#content").fitVids();
-  });
+jQuery( document ).ready( function( $ ) {
+	document.documentElement.className = 
+       document.documentElement.className.replace("no-js","js");
+});
 
-}); // Wrap all scripts in thi
 /*
 =====================================================
 		
@@ -24,9 +19,8 @@ jQuery( document ).ready( function( $ ) { // Wrap all scripts in this
 =====================================================
 */		
 
-jQuery(document).ready(function($) { // Wrap all scripts in this
 
-	$(document).ready(function(){
+	jQuery(document).ready(function( $ ){
 		// scroll body to 0px on click
 		$('#back-to-top a').click(function () {
 			$('body,html').animate({
@@ -36,41 +30,29 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 		});
 	});
 
-});
-
-})(jQuery);
-
-jQuery(document).ready(function($) { // Wrap all scripts in this
-
 /*
-	
-	Masonry
-	
-*/
-
-
-		// initialize Masonry
-
-		$container = $('.masonrycontainer').masonry({
-			columnWidth: '.grid-sizer',
-			gutter: '.gutter-sizer',
-			itemSelector: ".item"
+=====================================================
 		
+		Responsive Nav
+	
+=====================================================
+*/	
+
+jQuery(document).ready(function( $ ){
+	var navigation = responsiveNav(".nav-collapse", {
+			animate: true,                    // Boolean: Use CSS3 transitions, true or false
+			transition: 284,                  // Integer: Speed of the transition, in milliseconds
+			label: "Menu",                    // String: Label for the navigation toggle
+			insert: "before",                  // String: Insert the toggle before or after the navigation
+			customToggle: "nav-toggle",                 // Selector: Specify the ID of a custom toggle
+			closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+			openPos: "relative",              // String: Position of the opened nav, relative or static
+			navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+			navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+			jsClass: " ",                    // String: 'JS enabled' class which is added to <html> element
+			// Swapping no-js to js with script instead
+			init: function(){},               // Function: Init callback
+			open: function(){},               // Function: Open callback
+			close: function(){}               // Function: Close callback
 		});
-		
-		// layout Masonry again after all images have loaded
-		
-		$container.imagesLoaded( function() {
-		$container.masonry();
-		});
-
-		
-
-/*
-	
-	Sources:
-		http://web.admcomputing.co.uk/masonry/sample-page/
-		http://masonry.desandro.com/appendix.html
-	
-*/
-}); // end Wrap all scripts in this
+	});
