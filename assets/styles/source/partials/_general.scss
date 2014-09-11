@@ -77,6 +77,14 @@ address {
 	font-style: italic;
 }
 
+ul {
+	&.nobullets { // to be used as @extend
+		margin: 0; 
+		padding: 0;
+		list-style-type: none;
+	}
+}
+
 /* ==========================================================================
    Alignment
    ========================================================================== */

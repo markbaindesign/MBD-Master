@@ -1,0 +1,19 @@
+ul.social-media-links {
+	@extend .nobullets !optional;
+	font-size: 2em;
+
+	li {
+		display: inline-block;
+		color: $color_grey-light;
+		a {
+
+			&:link {
+				text-decoration: none;
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
