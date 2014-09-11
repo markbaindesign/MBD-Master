@@ -16,10 +16,12 @@ Tags:
 
 // Reset, Variables, Mixins, Etc
 // DO NOT EDIT ORDER OF FILES
-
+@import "partials/color-me-sass";
 @import "partials/mixins";
 @import "partials/variables";
 @import "partials/normalize";
+
+
 
 // Bower Components
 @import "../../../bower_components/singularity/stylesheets/singularitygs";
@@ -42,6 +44,7 @@ Tags:
 @import "partials/signup";
 @import "partials/masonry";
 @import "partials/featured-content";
+@import "partials/quotes";
 
 // Menus, Page and Post styles
 @import "partials/menus";

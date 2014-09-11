@@ -1,0 +1,21 @@
+#quotes {
+
+	.container {
+		@include clearfix;
+	}
+
+	blockquote {
+		@include breakpoint( tablet ){
+			width: 55%; 
+			margin-right: 25%;
+			float: left;
+		}
+	}
+
+	img {
+		@include breakpoint( tablet ){
+			width: 20%; 
+			float: left;
+		}
+	}
+}

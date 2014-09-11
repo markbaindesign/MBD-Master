@@ -1,6 +1,11 @@
 /* ==========================================================================
    Header
    ========================================================================== */
+#pre-header {
+	color: $color-text-pre-header;
+	background: $color-background-pre-header;
+
+}
 
 .site-header {
 	color: $color_text-header;

@@ -65,7 +65,22 @@ p {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 0 2em 0;
+	font-size: 1.5em;
+	font-style: italic;
+	position: relative;
+	&:before {
+			position: absolute;
+			top: 0;
+			left: -.7em;
+			font-size: 3em;
+			content: open-quote;
+		  	line-height: 1;
+
+		}
+	p {
+	
+	}
 }
 
 address {
@@ -84,6 +99,7 @@ ul {
 		list-style-type: none;
 	}
 }
+	
 
 /* ==========================================================================
    Alignment
