@@ -43,6 +43,7 @@
 					<?php _e( 'Menu', '_mbbasetheme' ); ?>
 				</a>
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
+<?php get_template_part( 'content', 'social-links' ); ?>
 </div><!-- .container -->
 			</div><!-- .section -->
 	<header id="masthead" class="site-header section" role="banner">
