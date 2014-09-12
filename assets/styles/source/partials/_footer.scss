@@ -2,6 +2,12 @@
    Footer
    ========================================================================== */
 
+#footer-widgets {
+	aside {
+		padding: 1%;
+	}
+}
+
 .site-footer {
 	color: $color_text-footer;
 	background: $color_background-footer;
