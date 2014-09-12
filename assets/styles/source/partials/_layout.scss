@@ -21,8 +21,8 @@ body,
 
 /* Right sidebar */
 
-.right-sidebar .content-area {
-	@include breakpoint(medium) {
+.right-sidebar #primary {
+	@include breakpoint(tablet) {
 		float: left;
 		margin: 0 -25% 0 0;
 	}
@@ -30,14 +30,13 @@ body,
 }
 
 .right-sidebar .site-main {
-	padding: $block-padding;
-	@include breakpoint(medium) {
+	@include breakpoint(tablet) {
 		margin: 0 25% 0 0;
 	}
 }
 
 .right-sidebar .site-content .widget-area {
-	@include breakpoint(medium) {
+	@include breakpoint(tablet) {
 		float: right;
 		overflow: hidden;
 		width: 25%;
@@ -46,30 +45,29 @@ body,
 
 /* Left sidebar */
 
-.left-sidebar .content-area {
-	@include breakpoint(medium) {
-		float: right;
-		margin: 0 -25% 0 0;
-	}
+.left-sidebar #primary {
 	width: 100%;
+	@include breakpoint(tablet) {
+		float: left;
+		margin: 0 -100% 0 0;
+	}
 }
 
 .left-sidebar .site-main {
-	padding: $block-padding;
-	@include breakpoint(medium) {
-		margin: 0;
+	@include breakpoint(tablet) {
+		margin-left: 25%;
 	}
 }
 
 .left-sidebar .site-content .widget-area {
-	@include breakpoint(medium) {
+	@include breakpoint(tablet) {
 		float: left;
 		overflow: hidden;
 		width: 25%;
 	}
 }
 
-
+.right-sidebar
 
 /* Menu */
 
@@ -89,4 +87,35 @@ input[type=search] {
     	width: 94%;
     	padding: $block-padding;
 	margin: $block-padding;
+}
+
+/* Right sidebar */
+
+.media_block {
+	@include clearfix;
+	.media_block-text {
+		width: 100%;
+		@include breakpoint(tablet) {
+			float: left;
+			margin: 0 -35% 0 0;
+		}
+		blockquote {
+			@include breakpoint(tablet) {
+				margin: 0 35% 0 0;
+				p {
+					margin: 0;
+				}
+			}		
+		}
+	}
+	.media_block-image {
+		text-align: center;
+		@include breakpoint(tablet) {
+			float: right;
+			width: 20%;
+		}
+		img {
+			margin-bottom: 1em;
+		}
+	}
 }
