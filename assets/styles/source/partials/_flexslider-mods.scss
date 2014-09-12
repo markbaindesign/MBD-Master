@@ -1,0 +1,50 @@
+.flexslider {
+	margin: 0;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+
+	&:hover {
+	  	.flex-prev {
+			left: -80px;
+		}
+		.flex-next {
+			right: -80px;
+		}
+	}
+}
+
+.flex-control-thumbs {
+	margin: 0 auto;
+	img {
+		opacity: .4;
+	}
+}
+
+.flex-control-nav {
+	width: 20%;
+	li {
+		padding: 0 5%;
+	}
+}
+
+.flex-direction-nav {
+	a {
+		&.flex-prev {
+			left: 0;
+		}
+		&.flex-next {
+			right: 0;
+			&:before {
+				content: '\e607';
+			}
+		}
+		&:before {
+			font-family: 'mbd-icon-font';
+			font-size: 40px;
+			display: inline-block;
+			content: '\e609';
+		}
+	}
+}
