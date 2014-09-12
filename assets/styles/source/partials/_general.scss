@@ -15,7 +15,9 @@
    General
    ========================================================================== */
 
-body { }
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
 
 ::-moz-selection {
 	background: $color_text-selection;
@@ -61,10 +63,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
 	margin-bottom: 1em;
 }
 
 blockquote {
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
 	margin: 0 0 2em 0;
 	font-size: 1.5em;
 	font-style: italic;
