@@ -60,5 +60,19 @@
 		
 		</div><!-- .container -->
 	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<div id="quotes" class="section">
+		<div class="container">
+<?php
+				if ( is_front_page())
+					get_template_part( 'module', 'slider' );
+?>
+		</div><!-- .container -->
+	</div><!-- #signup .section -->
+	<div id="content" class="site-content section">
+		<div class="container">
+			<?php
+				if ( is_front_page() && mbdmaster_has_featured_posts() )
+				//	get_template_part( 'featured' );
+			?>
+					
+		
