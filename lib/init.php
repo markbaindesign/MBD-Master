@@ -39,6 +39,12 @@ function _mbbasetheme_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	// Add support for featured content.
+	add_theme_support( 'featured-content', array(
+		'featured_content_filter' => 'mbdmaster_get_featured_posts',
+		'max_posts' => 6,
+	) );
+
 	// Register nav menus
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'mbbasetheme' ),

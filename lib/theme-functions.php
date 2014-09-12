@@ -179,7 +179,43 @@ function mbdmaster_body_classes( $classes ) {
 	$mbdmaster_settings = get_option( 'mbdmaster_settings' );	
 	
 	$classes[] = $mbdmaster_settings['layout_setting'];
+
+		if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) )
+		$classes[] = 'slider';
+	elseif ( is_front_page() )
+		$classes[] = 'grid';
 	
 	return $classes;
 
 }	
+
+/**
+ * Getter function for Featured Content Plugin.
+ *
+ * @since Twenty Fourteen 1.0
+ *
+ * @return array An array of WP_Post objects.
+ */
+function mbdmaster_get_featured_posts() {
+	return apply_filters( 'mbdmaster_get_featured_posts', array() );
+}
+
+/**
+ * A helper conditional function that returns a boolean value.
+ *
+ * @since Twenty Fourteen 1.0
+ *
+ * @return bool Whether there are featured posts.
+ */
+function mbdmaster_has_featured_posts() {
+	return ! is_paged() && (bool) apply_filters( 'mbdmaster_get_featured_posts', false );
+}
+
+/*
+ * Add Featured Content functionality.
+ *
+ * To overwrite in a plugin, define your own Featured_Content class on or
+ * before the 'setup_theme' hook.
+ */
+if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] )
+	require get_template_directory() . '/lib/inc/featured-content.php';
