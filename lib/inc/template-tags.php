@@ -140,9 +140,9 @@ function mbdmaster_search_form( $form ) {
 	
     $form = '<form role="search" method="get" class="search-form" action="' . $var . '">
 				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<i id="search-icon" aria-hidden="true" class="icon-search icon-left"></i><input type="search" class="search-field" placeholder="Type your search here." value="" name="s" title="Search for:">
-				</label>
+					<span class="screen-reader-text">Search for:</span	>			</label>
+					<input type="search" class="search-field" placeholder="Type your search here." value="" name="s" title="Search for:">
+
 				<input type="submit" class="search-submit" value="Search">
 			</form>';
 
