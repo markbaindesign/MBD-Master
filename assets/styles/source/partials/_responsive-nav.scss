@@ -3,8 +3,13 @@
 .nav-collapse {
 	
 	li {
-	  width: $width_menu-item;
+	  width: 100%;
 	  display: block;
+	  @include breakpoint( tablet ){
+	  		width: $width_menu-item;
+
+		}
+		  
 	}
 
 	ul {
@@ -63,7 +68,6 @@
 /* Navigation toggle */
 
 #nav-toggle {
-	font-size: 2em;
 	float: right;
 	text-align: right;
 	width: 1em;

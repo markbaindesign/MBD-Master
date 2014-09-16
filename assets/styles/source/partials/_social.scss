@@ -1,6 +1,7 @@
 ul.social-media-links {
 	@extend .nobullets !optional;
-	font-size: 2em;
+	font-size: 1.2em;
+	margin-bottom: 1em;
 	@include breakpoint( tablet ){
 		font-size: 1.4em;
 	}
@@ -9,13 +10,15 @@ ul.social-media-links {
 		display: inline-block;
 		text-align: center;
 		a {
-
+			opacity: .2;
+			padding: .5em;			
 			&:link {
 				text-decoration: none;
 			}
 
 			&:hover {
-				opacity: .7;
+				opacity: .6;
+				@include transition(all, 0.3s, ease-in-out);
 			}
 		}
 	}
@@ -24,8 +27,8 @@ ul.social-media-links {
 // Tweaks
 
 ul.social-media-links {
-	float: right;
-	width: 5em;
+	// float: right;
+	// width: 5em;
 
 	li {
 		display: inline-block;

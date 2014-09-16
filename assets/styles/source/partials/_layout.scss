@@ -80,13 +80,37 @@ ul.nav-menu li a {
 
 /* Search */
 
-input[type=search] {
-    	color: #fff;
-	background: rgba(0,0,0,.1);
+input[type="search"] {
+		color: $color_white; // Input color
+		background: transparent;
    	border-width: 0;
     	width: 94%;
     	padding: $block-padding;
-	margin: $block-padding;
+		margin: $block-padding;
+	}
+input[type="submit"] {
+		display: none;
+
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0,0,0,.4);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+
+a#search-toggle {
+	float: left;
 }
 
 /* Right sidebar */

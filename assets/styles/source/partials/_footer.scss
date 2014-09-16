@@ -1,6 +1,15 @@
 /* ==========================================================================
    Footer
    ========================================================================== */
+.site-footer {
+	text-align: center;
+	color: $color_text-footer;
+	background: $color_background-footer;
+
+	.site-info {
+		font-size: 11px;
+	}
+}
 
 #footer-widgets {
 	aside {
@@ -8,7 +17,4 @@
 	}
 }
 
-.site-footer {
-	color: $color_text-footer;
-	background: $color_background-footer;
-}
+

@@ -2,6 +2,16 @@
    Menus
    ========================================================================== */
 
+.nav-collapse {
+	background: rgba(0,0,0,.1);
+	transition: all 0.2s ease-in;
+
+	li:hover {
+		background: rgba(0,0,0,.1);
+		@include transition(all, 0.3s, ease-in-out);
+	}
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -16,11 +26,13 @@
 	margin: 0;
 	padding-left: 0;
 	li {
-		padding: 3px;
+
 		text-align: center;
-		background: $color_background-nav;
-		@include border-radius(5px);
+
 		@include breakpoint(tablet){
+			//background: $color_background-nav;
+			@include border-radius(5px);			
+			padding: 3px;			
 			display: inline-block;
 			margin-right: 20px;
 			position: relative; // Allow absolute positioning
@@ -46,60 +58,22 @@
 
 
 .main-navigation a {
+	padding: .88em 3%;
 	display: block;
 	text-decoration: none;
+	color: $color_white;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 
-.main-navigation ul a {
-	 border-bottom: 1px solid darken($color_background-nav, 4%);
-	 border-top: 1px solid lighten($color_background-nav, 2%);
-	 @include breakpoint(tablet){
-		 border: none;
-	 }
- }
-
-.main-navigation ul ul a {
-	 background: darken($color_background-nav, 2%);
-	 border-top: 1px solid darken($color_background-nav, 4%);
-	 border-bottom: 1px solid lighten($color_background-nav, 2%);
- }
-
-.main-navigation ul ul ul a {
-	 background: darken($color_background-nav, 4%);
-	 border-top: 1px solid darken($color_background-nav, 6%);
-	 border-bottom: 1px solid darken($color_background-nav, 4%);
- }
-
-.main-navigation ul ul li {
- 	background: darken($color_background-nav, 10%);
-}
-
-.main-navigation li:hover > a {
-	 background: darken($color_background-nav, 2%);
- }
-
-.main-navigation ul ul l:hover > a {
-	 background: darken($color_background-nav, 4%);
- }
-
- .main-navigation ul ul ul li:hover > a {
-	 background: darken($color_background-nav, 6%);
- }
-
-.main-navigation ul ul a:hover {
-}
-
-
-
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
-}
-
-/* Small menu */
-.menu-toggle {
-	cursor: pointer;
-	display: none;
+#nav-toggle {
+	&.active {
+		float: right;
+		&::before {
+  			font-size: 14px;
+  			content:"\e602";
+		}
+	}
 }
 
 .menu li.page_item_has_children > a:after {
@@ -138,4 +112,11 @@
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+.js-nav-active {
+	.nav-collapse {
+		max-height: 300em; // must set max-height for transition effect
+		transition: all 0.2s ease-in;
+	}
 }

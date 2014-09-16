@@ -2,12 +2,51 @@
    Header
    ========================================================================== */
 #pre-header {
-	padding: .5em;
+	padding: 0;
 	color: $color-text-pre-header;
 	background: $color-background-pre-header;
+	@include breakpoint( tablet ){
+		padding: .5em;
+	}
+	a {
+		&.toggle {
+			color: $color_white;
+			opacity: .8;
+			width: auto;
+			margin: 0 0 0 3%;
+			padding: 3%;
+			float: left;
+			@include border-bottom-radius( 5px );
+			border-bottom: 3px solid  $color-background-pre-header;
+			&.active {
+				opacity: 1;
+				background: rgba(0,0,0,.1);
+				@include transition(all, 0.3s, ease-in-out);
+			}
+		}
+		&#nav-toggle {
+			margin: 0 3% 0 0;
+			float: right;
+			border-bottom: 0;
+			border-top: 3px solid  $color-background-pre-header;
+			@include border-top-radius( 5px );
+			@include border-bottom-radius( 0 );
+			
+		}	
+	}
+}
+
+#pre-header-search {
+	
 }
 
 .site-header {
 	color: $color_text-header;
 	background: $color_background-header;
+	&.section {
+		padding: 10px 3%;
+	}
+	h1 {
+		margin: 0;
+	}
 }
