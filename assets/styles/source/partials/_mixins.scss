@@ -252,6 +252,7 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
 }
+// Example: @include transition(all, 0.3s, ease-in-out);
 
 /* Buttons */
 
