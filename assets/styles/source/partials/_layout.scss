@@ -143,3 +143,15 @@ a#search-toggle {
 		}
 	}
 }
+
+/* No Sidebar */
+
+.no-sidebar {
+	article {
+		@include center-block;
+		max-width: 700px;
+		font-size: 20px;
+		line-height: 1.5;
+		letter-spacing: 0.01rem;
+	}
+}
