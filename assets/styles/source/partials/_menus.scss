@@ -17,6 +17,8 @@
 	display: block;
 	width: 100%;
 	@include breakpoint(tablet){
+		width: 70%;
+		float: left;
 	}
 }
 
@@ -51,6 +53,8 @@
 			display: block; // Sub-menus appear on hover
 			opacity: 1;
 			visibility: visible;
+			background: $color_grey;
+			@include transition(all, 0.3s, ease-in-out);
 		}
 	}
 }
