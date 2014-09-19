@@ -15,17 +15,25 @@
 						<li>fresh from the fight</li>
 					</ul>
 					<div class="hero-cta">
-						<div class="wow fadeInLeft"><a href="<?php bloginfo( 'url' ); ?>/contact" class="cta button cta-primary">Arrange a chat now <i aria-hidden="true" class="icon-arrow-right"></i></a></div>
-						<div class="wow fadeInRight"><a href="<?php bloginfo( 'url' ); ?>/portfolio" class="cta button cta-secondary">Check out my work <i aria-hidden="true" class="icon-arrow-right"></i></a></div>
+						<div class="wow fadeInLeft"><a href="" class="cta button cta-primary">Do This!<i aria-hidden="true" class="icon-arrow-right"></i></a></div>
+						<div class="wow fadeInRight"><a href="" class="cta button cta-secondary">or, alternatively, do this<i aria-hidden="true" class="icon-arrow-right"></i></a></div>
 					</div>
 				</div><!-- .hero-text -->
 			</div><!-- .container -->
 	</div><!-- .hero -->
 
-		<div class="section">
-			<div class="container">	
-	<?php	get_template_part( 'module', 'slider' ); ?>
-			</div><!-- .container -->
+	<div class="section">
+		<div class="container">	
+			<?php	get_template_part( 'module', 'slider' ); ?>
+		</div><!-- .container -->
 	</div><!-- .section -->
+
+	<div class="section">
+		<div class="container">	
+			<h2>Etiam commodo malesuada ante</h2>
+			<?php	get_template_part( 'content', 'table' ); ?>
+		</div><!-- .container -->
+	</div><!-- .section -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
