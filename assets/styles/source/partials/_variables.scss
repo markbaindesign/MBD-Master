@@ -51,13 +51,13 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	Use these values outside of this stylesheet!
 */
 
-	$color_text:							$color_black; 
+	$color_text:							lighten( $color_black, 30% ); 
 	$color_text-cta:						$color_black; 
 	$color_text-cta-2:					$color_black; 
 	$color_text-anchor:					$color_black; 
-	$color_text-header:					$color_white; 
-	$color-text-pre-header:				$emerald;	
-	$color_text-footer:					$color_white; 
+	$color_text-header:					$color_black; 
+	$color-text-pre-header:				$color_black;	
+	$color_text-footer:					$color_black; 
 	$color_text-anchor-visited:		$color_black; 
 	$color_text-anchor-hover:			$color_black; 
 	$color_text-anchor-active:			$color_black; 
@@ -65,11 +65,11 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-selection: 				$color_orange;
 	
 	$color_background:					$color_white;
-	$color_background-cta:				$orange;
+	$color_background-cta:				$color_white;
 	$color_background-cta-2:			$color_white;
-	$color_background-nav:				darken( $nephritis, 4%);
-	$color_background-header:			$emerald;
-	$color-background-pre-header:		$nephritis;
-	$color_background-footer:			$nephritis;
+	$color_background-nav:				$color_white;
+	$color_background-header:			$color_white;
+	$color-background-pre-header:		darken($color_white, 10%);
+	$color_background-footer:			$color_white;
 	
-	$color_border: 						$color_grey-light;
+	$color_border: 						$color_black;
