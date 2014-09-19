@@ -24,7 +24,7 @@ Tags:
 
 
 // Bower Components
-@import "../../../bower_components/singularity/stylesheets/singularitygs";
+// @import "../../../bower_components/singularity/stylesheets/singularitygs";
 
 // Globals
 @import "partials/h5bp-global";
@@ -67,11 +67,11 @@ Tags:
 @import "partials/forms";
 
 // WordPress
-@import "wp/wp"; // WP-generated classes
-@import "wp/widgets";
-@import "wp/comments";
-@import "wp/plugins/wp-contact";
-@import "wp/plugins/wp-paginate";
+// @import "wp/wp"; // WP-generated classes
+// @import "wp/widgets";
+// @import "wp/comments";
+// @import "wp/plugins/wp-contact";
+// @import "wp/plugins/wp-paginate";
 
 // Helper Classes, Print, Etc
 @import "partials/helpers";
