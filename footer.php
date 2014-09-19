@@ -1,4 +1,4 @@
-		</div><!-- .content -->
+
 	</div><!-- #content -->
 	
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
@@ -17,12 +17,7 @@
 		</div><!-- .widget-container -->
 	<?php endif; ?>
 
-	<!-- Quotes section -->
-	<div id="quotes" class="section">
-		<div class="container">
-			<?php get_template_part( 'content', 'quotes' ); ?>
-		</div><!-- .container -->
-	</div><!-- #signup .section -->
+
 
 	<!-- Newsletter signup section -->
 	<div id="signup" class="section">
