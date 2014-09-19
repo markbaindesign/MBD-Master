@@ -1,0 +1,25 @@
+.media-object {
+	@include clearfix;
+	margin-bottom: 1em;
+
+	.image-wrapper {
+		display: block; // likely to be wrapped in an anchor tag
+		float: right;
+		width: 27%;
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	article {
+		float: left;
+		width: 70%;
+		padding-right: 3%;
+	}
+
+	h1 {
+		clear: none;
+		margin: 0;
+	}
+}

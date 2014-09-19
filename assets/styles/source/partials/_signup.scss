@@ -15,10 +15,8 @@ form {
 		text-align: left;
 		padding-bottom: 5px;
 		@include breakpoint( mobile ) {
-			display: none;
 		}
 		@include breakpoint( tablet ) {
-			display: block;
 		}	
 	}
 
@@ -37,7 +35,6 @@ form {
 
 			&.username { /* User's name */
 				@include breakpoint( mobile ) {
-					display: none;
 				}
 				@include breakpoint( tablet ) {
 					display: table-cell;
@@ -89,29 +86,4 @@ input {
 			width: auto;
 		}
 	}
-}
-
-#final-signup {
-
-
-	.signin {
-		@include clearfix;
-	}
-	
-	@include breakpoint( tablet ) {
-		
-		form, .content {
-			width: 50%;
-		}
-
-		form	{
-			float: right;
-		}
-
-		.content {
-			float: left;
-		}
-
-	}
-
 }
