@@ -16,7 +16,7 @@
 					</ul>
 					<div class="hero-cta">
 						<div class="wow fadeInLeft"><a href="" class="cta button cta-primary">Do This!<i aria-hidden="true" class="icon-arrow-right"></i></a></div>
-						<div class="wow fadeInRight"><a href="" class="cta button cta-secondary">or, alternatively, do this<i aria-hidden="true" class="icon-arrow-right"></i></a></div>
+						<div class="wow fadeInRight"><a href="" class="">or, alternatively, do this<i aria-hidden="true" ></i></a></div>
 					</div>
 				</div><!-- .hero-text -->
 			</div><!-- .container -->
