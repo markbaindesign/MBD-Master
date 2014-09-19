@@ -26,7 +26,7 @@ function _mbbasetheme_customize_register( $wp_customize ) {
 		'mbdmaster_settings[layout_setting]',
 		// Arguments array
 		array(
-			'default' => 'right-sidebar',
+			'default' => 'no-sidebar',
 			'type' => 'option'
 		)
 	);
@@ -64,7 +64,9 @@ function _mbbasetheme_customize_register( $wp_customize ) {
 			'section' => 'layout_section',
 			'choices' => array(
 				'left-sidebar' => __( 'Left sidebar', 'mbdmaster' ),
-				'right-sidebar' => __( 'Right sidebar', 'mbdmaster' )
+				'right-sidebar' => __( 'Right sidebar', 'mbdmaster' ),
+				'no-sidebar' => __( 'No sidebar', 'mbdmaster' ),
+				
 			),
 			// This last one must match setting ID from above
 			'settings' => 'mbdmaster_settings[layout_setting]'
