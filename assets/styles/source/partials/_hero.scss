@@ -2,16 +2,21 @@
 	@include clearfix;
 	padding: 1em 0;
 	position: relative;
+	background: $color_background-hero;
 	border-bottom: 1px solid #ddd;
 	@include breakpoint( tablet ) {
 		padding: 2em 0;
 	}
-
+	
+	.container {
+		background: transparent;
+		@include breakpoint(tablet) {
+			background: url('assets/images/hero-background.jpg') no-repeat bottom right;
+		}
+	}
 	.hero-image {
 		@include breakpoint( tablet ) {
-			float: right;
-			width: 45%;
-			margin-left: 10%;
+			display: none;
 		}
 	}
 	.hero-text {
@@ -40,11 +45,6 @@
 
 	@include breakpoint(tablet) {
 		text-align: left;
-background: url('assets/images/hero-background.jpg') no-repeat bottom center;
--moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;
 	}
 	a {
 		display: block;

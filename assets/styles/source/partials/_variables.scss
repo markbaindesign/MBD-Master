@@ -43,7 +43,7 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	/* Colors */
 	
 	$color_red: 				red; 			/* example */
-	$color_blue: 				blue; 		/* example */
+	$color_blue: 				#93E8E1; 	/* example */
 	$color_orange:	 			orange; 		/* example */
 	$color_green:	 			green; 		/* example */
 
@@ -67,9 +67,11 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_background:					$color_white;
 	$color_background-cta:				$color_red;
 	$color_background-cta-2:			$color_white;
-	$color_background-nav:				$color_white;
-	$color_background-header:			$color_white;
-	$color-background-pre-header:		darken($color_white, 10%);
+	$color_background-nav:				$color_blue;
+	$color_background-header:			$color_blue;
+	$color_background-hero:				$color_blue;
+	
+	$color-background-pre-header:		darken($color_blue, 10%);
 	$color_background-footer:			$color_white;
 	
 	$color_border: 						$color_black;
