@@ -27,24 +27,23 @@
 <div id="page" class="hfeed site">
 	
 	<div id="pre-header" class="section">
-	<?php get_template_part( 'pre-header-search' ); ?>
-	<div class="container">
-		
-			
-				<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
-				<a id="nav-toggle" class="icon-menu toggle"> <!-- id "menu-toggle" required by responsive-nav.js Using custom toggle so can be translated -->
-					<span class="visuallyhidden"><?php _e( 'Menu', '_mbbasetheme' ); ?></span>
-				</a>
-				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
-	<?php 
-					wp_nav_menu( 
-						array( 
-							'theme_location' => 'primary', 
-							'container' => 'nav', 
-							'container_class' => 'nav-collapse main-navigation' // Required by responsive-nav.js
-						) 
-					); 
-				?>
+		<?php get_template_part( 'pre-header-search' ); ?>
+		<div class="container">
+			<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
+			<a id="nav-toggle" class="icon-menu toggle"> <!-- id "menu-toggle" required by responsive-nav.js Using custom toggle so can be translated -->
+				<span class="visuallyhidden"><?php _e( 'Menu', '_mbbasetheme' ); ?></span>
+			</a>
+			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
+			<?php 
+				wp_nav_menu( 
+					array( 
+						'theme_location' => 'primary', 
+						'container' => 'nav', 
+						'container_class' => 'nav-collapse main-navigation' // Required by responsive-nav.js
+					) 
+				); 
+			?>
+			<div id="nav-bar-search"><?php get_search_form(); ?></div>
 			<?php // get_template_part( 'content', 'social-links' ); ?>
 		</div><!-- .container -->
 	</div><!-- .section -->
@@ -56,25 +55,10 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
 					</a>
 				</h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<!-- 	<h2 class="site-description"><?php // bloginfo( 'description' ); ?></h2> -->
 			</div>
 
 		
 		</div><!-- .container -->
 	</header><!-- #masthead -->
-	<div id="quotes" class="section">
-		<div class="container">
-<?php
-				if ( is_front_page())
-					get_template_part( 'module', 'slider' );
-?>
-		</div><!-- .container -->
-	</div><!-- #signup .section -->
-	<div id="content" class="site-content section">
-		<div class="container">
-			<?php
-				if ( is_front_page() && mbdmaster_has_featured_posts() )
-				//	get_template_part( 'featured' );
-			?>
-					
-		
+<div id="content">	
