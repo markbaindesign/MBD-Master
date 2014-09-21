@@ -2,4 +2,56 @@
    Home Page Template
    ========================================================================== */
 
-body.home {}
+div#tweets {
+	color: $color_white;
+	background: darken( $color_blue, 40% );
+
+	#twitter-avatar {
+		float: left;
+		width: 12.5%;
+		margin-right: 10%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	#tweet-wrapper {
+		float: left;
+		width: 77.5%;
+
+		.a-tweet {
+			@include clearfix;
+			margin: 0;
+			padding: 0;
+
+		p {
+				margin: 0 0 1em 0;
+				width: 100%;
+				float: left;
+
+				&.tweet {
+					font-style: italic;
+					font-size: 1.3em;
+					margin-bottom: .5em;
+				}
+
+				&.timePosted {
+					color: darken( $color_blue, 70% );
+					opacity: .73;
+					width: 50%;
+				}
+
+				&.interact {
+					@extend .timePosted;
+					text-align: right;
+
+					a {
+						margin-left: 10px;
+
+					}
+				}
+			}
+		}
+	}	
+}

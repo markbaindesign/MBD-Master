@@ -85,12 +85,13 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'assets/js/plugins.min.js': [
-                        // 'assets/js/source/plugins.js',
                        	'assets/js/vendor/responsive-nav.js',
                        	'assets/js/vendor/slider.js',
+								'assets/js/vendor/jquery.easing.1.3.min.js',
                        	'assets/js/vendor/jquery.flexslider.js',
-								// 'assets/js/vendor/imagesloaded.pkgd.min.js',
-								// 'assets/js/vendor/jquery.fitvids.js',                       
+								'assets/js/vendor/jquery.jcontent.0.8.js',
+								'assets/js/vendor/twitterFetcher.js',
+		 'assets/js/vendor/jquery.milk.js',                       
 		 // 'assets/js/vendor/yourplugin/yourplugin.js',
                     ]
                 }

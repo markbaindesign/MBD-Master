@@ -24,7 +24,7 @@
 
 	<div class="section">
 		<div class="container">	
-			<?php	get_template_part( 'module', 'slider' ); ?>
+			<?php	// get_template_part( 'module', 'slider' ); ?>
 		</div><!-- .container -->
 	</div><!-- .section -->
 
@@ -33,6 +33,22 @@
 			<h2>Etiam commodo malesuada ante</h2>
 			<?php	get_template_part( 'content', 'table' ); ?>
 		</div><!-- .container -->
+	</div><!-- .section -->
+
+	<div id="tweets" class="section">
+		<div class="container">
+			<div id="twitter-avatar">
+					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/face.jpg" alt="" title="">				
+			</div><!-- #twitter-avatar -->
+					<div id="tweet-wrapper">
+					<div id="twitter-feed" class="twitter-feed">
+			<div id="twitter-test">
+				<div class="slides">
+				</div>
+			</div><!-- #slides -->
+		</div><!-- .container -->
+					</div><!-- #tweet-wrapper -->
+					</div><!-- .container -->
 	</div><!-- .section -->
 
 <?php get_sidebar(); ?>

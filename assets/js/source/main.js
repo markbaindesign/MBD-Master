@@ -157,3 +157,89 @@ animationLoop: false,
   });
 
 }); // end Wrap all scripts in this
+/*
+=====================================================
+		
+	jContent 
+	
+=====================================================
+*/	
+
+jQuery(document).ready(function($) { // Wrap all scripts in this
+
+$("#jcontent").jContent({orientation: 'vertical', 
+                        // easing: 'easeOutCirc', 
+                        duration: 800,
+                        auto: true,
+                        direction: 'next', //or 'prev'
+                        pause: 1500,
+                        pause_on_hover: true}); 
+
+}); // end Wrap all scripts in this
+
+jQuery(document).ready(function($) { // Wrap all scripts in this
+
+
+}); // end Wrap all scripts in this
+
+/*
+=====================================================
+		
+	Twitter-Post-Fetcher
+	
+=====================================================
+*/	
+
+jQuery(document).ready(function($) { // Wrap all scripts in this
+
+// ##### Advanced example 2 #####
+// Similar as previous, except this time we pass a custom function to render the
+// tweets ourself! Useful if you need to know exactly when data has returned or
+// if you need full control over the output.
+
+var config5 = {
+  "id": '513630939277053952',
+  "domId": '',
+  "maxTweets": 3,
+  "enableLinks": true,
+  "showUser": false,
+  "showTime": true,
+  "dateFunction": '',
+  "showRetweet": true,
+  "customCallback": handleTweets,
+  "showInteraction": true
+};
+
+var milk_ActiveCarousselTwitter = function () {
+	//twitter carroussel
+	$("#twitter-test").jContent({
+		orientation: 'vertical',
+		// width :560,
+		// height:150,
+        easing: 'easeInOutBack',
+        speed: 1000,
+        auto: true,
+        direction: 'next', //or 'prev'
+        pause: 3500,
+        pause_on_hover: false
+     });
+     $(".twitter-link").unbind("click");
+};
+twitterFetcher.fetch(config5);
+function handleTweets(tweets){
+    var x = tweets.length;
+    var n = 0;
+    //var element = document.getElementById('slides');
+    var html = '';
+    while(n < x) {
+      html += '<div class="article-wrapper"><div class="a-tweet"><p class="tweet-content">' + tweets[n] + '</p></div></div>';
+      n++;
+    }
+    html += '';
+    //element.innerHTML = html;
+    $('.twitter-feed').find("div.slides").html(html);
+    milk_ActiveCarousselTwitter();
+}
+}); // end Wrap all scripts in this
+
+
