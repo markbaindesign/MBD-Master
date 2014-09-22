@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
             sass: {
-                files: ['assets/styles/source/**/*.{scss,sass}'],
+                files: ['assets/styles/source/**/*.{scss,sass}', 'bower_components/font-awesome/scss/*.scss'],
                 tasks: ['sass', 'autoprefixer', 'cssmin']
             },
             js: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: { livereload: true },
-                files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'bower_components/font-awesome/scss/*.scss', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 

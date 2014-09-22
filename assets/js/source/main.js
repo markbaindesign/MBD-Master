@@ -214,14 +214,14 @@ var milk_ActiveCarousselTwitter = function () {
 	//twitter carroussel
 	$("#twitter-test").jContent({
 		orientation: 'vertical',
-		// width :560,
+		width :794,
 		// height:150,
         easing: 'easeInOutBack',
         speed: 1000,
         auto: true,
         direction: 'next', //or 'prev'
-        pause: 3500,
-        pause_on_hover: false
+        pause: 6500,
+        pause_on_hover: true
      });
      $(".twitter-link").unbind("click");
 };
@@ -238,6 +238,7 @@ function handleTweets(tweets){
     html += '';
     //element.innerHTML = html;
     $('.twitter-feed').find("div.slides").html(html);
+	 $( "a" ).wrapInner( "<span></span>" ); // wrap text in span for styling
     milk_ActiveCarousselTwitter();
 }
 }); // end Wrap all scripts in this

@@ -13,6 +13,8 @@ div#tweets {
 
 		img {
 			width: 100%;
+			@include center-block;
+			@include border-radius( 50% );
 		}
 	}
 
@@ -24,6 +26,10 @@ div#tweets {
 			@include clearfix;
 			margin: 0;
 			padding: 0;
+			
+			.tweet {
+				text-shadow: 1px 1px 1px darken( $color_blue, 45% );
+			}
 
 		p {
 				margin: 0 0 1em 0;
@@ -40,15 +46,43 @@ div#tweets {
 					color: darken( $color_blue, 70% );
 					opacity: .73;
 					width: 50%;
+
+					&:before {
+						font-family: 'FontAwesome';
+						content: '\f017\0020'; // Clock/NBSP
+					}
 				}
 
 				&.interact {
-					@extend .timePosted;
+					// @extend .timePosted;
 					text-align: right;
+					color: darken( $color_blue, 70% );
+					opacity: .73;
+					width: 50%;
 
 					a {
-						margin-left: 10px;
+						margin-left: 20px;
+						text-decoration: none;
 
+						span {
+							@extend .visuallyhidden;
+						}
+
+						&:before {
+							font-family: 'FontAwesome';
+						}
+	
+						&.twitter_reply_icon:before {
+								content: '\f112' ;
+						}
+
+						&.twitter_retweet_icon:before {
+								content: '\f079' ;
+						}
+
+						&.twitter_fav_icon:before {
+								content: '\f005' ;
+						}						
 					}
 				}
 			}
