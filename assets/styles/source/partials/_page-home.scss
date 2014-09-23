@@ -89,3 +89,40 @@ div#tweets {
 		}
 	}	
 }
+
+/* Book shelf layout */
+
+.bookshelf {
+	padding: 1em 0;
+	@include clearfix;
+	@include sgs-change('debug', true);
+	// @include background-grid($color: pink);
+	@include add-grid(24);
+	@include add-gutter(1/3);
+
+	.book-item {
+	
+		article {
+			width: 48%;
+			padding-right: 4%;
+
+			h5 {
+				margin: 0;
+				color: $color_grey;
+				font-style: italic;
+			}
+		}
+		.image-wrapper {
+			width: 48%;
+		}
+		&:first-of-type {
+				@include grid-span(6, 1);
+		}
+		&:nth-of-type(2) {
+				@include grid-span(6, 10);
+		}
+		&:nth-of-type(3) {
+				@include grid-span(6, 19);
+		}
+	}
+}

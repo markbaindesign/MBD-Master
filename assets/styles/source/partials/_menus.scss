@@ -3,22 +3,21 @@
    ========================================================================== */
 
 .nav-collapse {
-	background: rgba(0,0,0,.1);
 	transition: all 0.2s ease-in;
 
 	li:hover {
-		background: rgba(0,0,0,.1);
+		// background: rgba(0,0,0,.1);
 		@include transition(all, 0.3s, ease-in-out);
 	}
 }
 
 .main-navigation {
-	clear: both;
 	display: block;
 	width: 100%;
-	@include breakpoint(tablet){
-		width: 70%;
-		float: left;
+	@include breakpoint($tablet){
+		width: 60%;
+		float: right;
+		text-align: right;
 	}
 }
 
@@ -27,22 +26,45 @@
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+
+	&.sub-menu {
+		@include breakpoint($tablet){
+			width: 150px;
+			background: rgba(255, 255, 255, .8);
+			z-index: 2;
+
+			li {
+				width: 100%;
+				text-align: left;
+				margin: 0;
+			}
+		}
+	}
+
 	li {
 
 		text-align: center;
 
-		@include breakpoint(tablet){
+		@include breakpoint($tablet){
 			//background: $color_background-nav;
 			@include border-radius(5px);			
-			padding: 3px;			
 			display: inline-block;
-			margin-right: 20px;
+			margin-right: 9px;
 			position: relative; // Allow absolute positioning
 		}
+
+		/* Add icon to "books" menu item */
+		&.books-menu-item > a:after {
+			font-family: 'FontAwesome';
+			content: '\f02d'; //  fa-book
+			padding-left: 5px;
+			color: lighten( $color-text-pre-header, 60% );
+		}
+
 		ul {
-			@include breakpoint(tablet){
+			@include breakpoint($tablet){
 				left: 0;
-				width: 150px;
+
 				display: none;
 				visibility: hidden;
 				position: absolute; // Overlay other content
@@ -53,7 +75,6 @@
 			display: block; // Sub-menus appear on hover
 			opacity: 1;
 			visibility: visible;
-			background: $color_grey;
 			@include transition(all, 0.3s, ease-in-out);
 		}
 	}
@@ -62,11 +83,15 @@
 
 
 .main-navigation a {
-	padding: .88em 3%;
+	padding: 10px 3%;
 	display: block;
 	text-decoration: none;
-	color: $color_white;
-	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	color: $color_black;
+	font-size: .88em;
+
+	&:hover {
+		color: #000;
+	}
 }
 
 
@@ -80,21 +105,17 @@
 	}
 }
 
-.menu li.page_item_has_children > a:after {
-	content: " +";
-	position: absolute;
-	right: 3%;
-	font-size: 1em;
-	padding: 0;
+/* Indicate hidden menu content */
+.main-navigation li.menu-item-has-children > a:after {
+	font-family: 'FontAwesome';
+	content: '\f0d7'; //  fa-caret-down
+	padding-left: 5px;
+	color: lighten( $color-text-pre-header, 60% );
 }
 
-.menu li.page_item_has_children > a:after {
-	content: " +";
-	position: absolute;
-	right: 3%;
-	font-size: 1em;
-	padding: 0;
-}
+
+
+
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,

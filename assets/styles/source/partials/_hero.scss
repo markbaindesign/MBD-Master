@@ -4,24 +4,24 @@
 	position: relative;
 	background: $color_background-hero;
 	border-bottom: 1px solid #ddd;
-	@include breakpoint( tablet ) {
+	@include breakpoint( $tablet ) {
 		padding: 2em 0;
 	}
 	
 	.container {
 		background: transparent;
-		@include breakpoint(tablet) {
+		@include breakpoint($tablet) {
 			background: url('assets/images/hero-background.jpg') no-repeat bottom right;
 		}
 	}
 	.hero-image {
-		@include breakpoint( tablet ) {
+		@include breakpoint( $tablet ) {
 			display: none;
 		}
 	}
 	.hero-text {
 		padding-top: 1em;
-		@include breakpoint( tablet ) {
+		@include breakpoint( $tablet ) {
 			padding-top: 0;
 			width: 45%;
 			float: left;
@@ -31,7 +31,7 @@
 		}
 	}
 	picture {
-		@include breakpoint( tablet ) {
+		@include breakpoint( $tablet ) {
 			display: none;
 		}
 	}
@@ -43,7 +43,7 @@
 	color: $color_text;
 	text-align: center;
 
-	@include breakpoint(tablet) {
+	@include breakpoint($tablet) {
 		text-align: left;
 	}
 	a {
@@ -52,7 +52,7 @@
 		&.cta-primary {
 			@include cta-primary;
 			margin: 0 0 1em 0;
-			@include breakpoint(tablet) {
+			@include breakpoint($tablet) {
 				margin: 0 20px 0 0;
 			}
 		}
@@ -81,17 +81,17 @@
 	// Headers & typography
 
 	h1, h3 {
-		@include breakpoint( tablet ) {
+		@include breakpoint( $tablet ) {
 		}
 	}
 
 	h1 {
 		padding: 0;
 		margin: 0;
-		@include breakpoint( tablet ) {
+		@include breakpoint( $tablet ) {
 			font-size: 4em;
 		}
-		@include breakpoint( tablet-horizontal ) {
+		@include breakpoint( $tablet-horizontal ) {
 			font-size: 5em;
 		}
 		@include breakpoint( desktop ) {
@@ -111,7 +111,7 @@
 		@include breakpoint(mobile-horizontal){
 			margin-bottom: 1em;
 		}
-		@include breakpoint(tablet){
+		@include breakpoint($tablet){
 			margin-bottom: 2em;
 		}
 

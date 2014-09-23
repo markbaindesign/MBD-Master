@@ -5,8 +5,8 @@
 	li {
 	  width: 100%;
 	  display: block;
-	  @include breakpoint( tablet ){
-	  		width: $width_menu-item;
+	  @include breakpoint( $tablet ){
+	  		width: auto;
 
 		}
 		  
@@ -22,7 +22,8 @@
 		ul {
 			
 			ul {
-				@include breakpoint(tablet){
+				@include breakpoint($tablet){
+					width: $width_menu-item;
 					position: absolute;
 					top: 0;
 					left: $width_menu-item;
@@ -45,16 +46,16 @@
   	display: block;
   	overflow: hidden; // hides menu until toggle is clicked
   	zoom: 1;
-  	@include breakpoint(tablet){
+  	@include breakpoint($tablet){
 		overflow: visible; // for dropdown menus 
 	}	  
   &.closed {
 		max-height: 0;
-		@include breakpoint(tablet){
+		@include breakpoint($tablet){
 			max-height: none;
 		}
 	}
-  @include breakpoint(tablet){
+  @include breakpoint($tablet){
 		position: relative;
 	}
 }
@@ -78,7 +79,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  @include breakpoint(tablet){
+  @include breakpoint($tablet){
 	   display: none;
 	}
 }

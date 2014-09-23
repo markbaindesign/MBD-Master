@@ -45,12 +45,12 @@ get_header(); ?>
 			</div><!-- .container -->
 	</div><!-- #testimonials-slider-single-book .section -->
 
-	<!-- Related items -->
-	<div id="related-books-single-book" class="section">
+	<div id="the-books" class="section">
 		<div class="container">	
-			<?php	get_template_part( 'content', 'related-posts' ); ?>
+			<h2>Morbi volutpat, urna eu fermentum rutrum</h2>
+			<?php	get_template_part( 'content', 'bookshelf' ); ?>
 		</div><!-- .container -->
-	</div><!-- #related-books-single-book .section -->
+	</div><!-- .section -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

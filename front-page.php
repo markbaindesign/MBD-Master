@@ -24,7 +24,7 @@
 
 	<div class="section">
 		<div class="container">	
-			<?php	// get_template_part( 'module', 'slider' ); ?>
+			<?php	get_template_part( 'module', 'slider' ); ?>
 		</div><!-- .container -->
 	</div><!-- .section -->
 
@@ -32,6 +32,13 @@
 		<div class="container">	
 			<h2>Etiam commodo malesuada ante</h2>
 			<?php	get_template_part( 'content', 'table' ); ?>
+		</div><!-- .container -->
+	</div><!-- .section -->
+
+	<div id="the-books" class="section">
+		<div class="container">	
+			<h2>Morbi volutpat, urna eu fermentum rutrum</h2>
+			<?php	get_template_part( 'content', 'bookshelf' ); ?>
 		</div><!-- .container -->
 	</div><!-- .section -->
 

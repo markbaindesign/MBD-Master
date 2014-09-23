@@ -2,7 +2,7 @@ ul.social-media-links {
 	@extend .nobullets !optional;
 	font-size: 1.2em;
 	margin-bottom: 1em;
-	@include breakpoint( tablet ){
+	@include breakpoint( $tablet ){
 		font-size: 1.4em;
 	}
 

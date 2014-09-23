@@ -52,6 +52,18 @@ var milk_ActiveCarousselTwitter = function () {
 };
 });
 </script>
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=261698(font-family=Garden+Pro)&sid=261700(font-family=Garden+Slab)&key=61dcotuE7g',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -74,10 +86,14 @@ var milk_ActiveCarousselTwitter = function () {
 					) 
 				); 
 			?>
-			<div id="nav-bar-search"><?php get_search_form(); ?></div>
+			<div id="nav-bar-search">
+
+				<?php get_search_form(); ?></div>
+
 			<?php // get_template_part( 'content', 'social-links' ); ?>
 		</div><!-- .container -->
 	</div><!-- .section -->
+
 	<header id="masthead" class="site-header section" role="banner">
 		<div class="container">
 			<div class="site-branding">

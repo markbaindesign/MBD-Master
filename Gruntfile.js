@@ -21,6 +21,13 @@ module.exports = function(grunt) {
                 files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'bower_components/font-awesome/scss/*.scss', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
+			
+		  	// Bower
+		  	bower: {
+    			install: {	//just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+					options: { targetDir: './bower_components' }
+				}
+  			},
 
         // sass
         sass: {
@@ -158,5 +165,6 @@ module.exports = function(grunt) {
     // register task
     grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']);
 	 grunt.loadNpmTasks('grunt-notify'); 
+	 grunt.loadNpmTasks('grunt-bower-task');
 
 };

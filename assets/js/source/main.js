@@ -42,6 +42,8 @@ jQuery(document).ready(function( $ ){
 
  var navigation2 = responsiveNav(".hidden-search", {
      customToggle: "search-toggle",
+	  navClass: "hidden-search", // String: Default CSS class. If changed, you need to edit the CSS too!
+  		navActiveClass: "js-search-active", //
  });
 
 	var navigation1 = responsiveNav(".main-navigation", {
