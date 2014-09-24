@@ -10,15 +10,9 @@ ul.social-media-links {
 		display: inline-block;
 		text-align: center;
 		a {
-			opacity: .2;
-			padding: .5em;			
+			padding: .5em .5em .5em 0;			
 			&:link {
 				text-decoration: none;
-			}
-
-			&:hover {
-				opacity: .6;
-				@include transition(all, 0.3s, ease-in-out);
 			}
 		}
 	}
@@ -26,21 +20,21 @@ ul.social-media-links {
 
 // Tweaks
 
+.social {
+	@include breakpoint( $mobile ){
+	  	float: left;
+		text-align: left;
+		width: 50%;
+	}
+}
+
 ul.social-media-links {
-	// float: right;
-	// width: 5em;
+	@include breakpoint( $mobile ){
+	  	margin-bottom: 0;
+	}	
 
 	li {
 		display: inline-block;
-		a {
 
-			&:link {
-				text-decoration: none;
-			}
-
-			&:hover {
-				opacity: .7;
-			}
-		}
 	}
 }

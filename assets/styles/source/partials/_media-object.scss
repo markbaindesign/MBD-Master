@@ -3,15 +3,18 @@
 	margin-bottom: 1em;
 
 	.image-wrapper {
-		display: block; // likely to be wrapped in an anchor tag
+
 		float: right;
 		width: 27%;
-		a img {
-			@include transition(all, 0.3s, ease-in-out);
-			
-			&:hover {
-				box-shadow: 4px 6px 10px rgba(0,0,0,.3);
+		a {
+			display: block; // likely to be wrapped in an anchor tag
+			img {
 				@include transition(all, 0.3s, ease-in-out);
+				
+				&:hover {
+					box-shadow: 4px 6px 10px rgba(0,0,0,.3);
+					@include transition(all, 0.3s, ease-in-out);
+				}
 			}
 		}
 		

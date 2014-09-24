@@ -94,6 +94,7 @@ module.exports = function(grunt) {
                     'assets/js/plugins.min.js': [
                        	'assets/js/vendor/responsive-nav.js',
                        	'assets/js/vendor/slider.js',
+                       	'assets/js/vendor/jquery.sticky-kit.min.js',								
 								'assets/js/vendor/jquery.easing.1.3.min.js',
                        	'assets/js/vendor/jquery.flexslider.js',
 								'assets/js/vendor/jquery.jcontent.0.8.js',

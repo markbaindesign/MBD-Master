@@ -54,14 +54,17 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text:							lighten( $color_black, 30% ); 
 	$color_text-cta:						$color_white; 
 	$color_text-cta-2:					$color_grey; 
-	$color_text-anchor:					inherit; 
 	$color_text-header:					$color_black; 
 	$color-text-pre-header:				$color_black;	
 	$color_text-footer:					$color_white; 
+
+	// Links
+	$color_text-anchor:					inherit; 
 	$color_text-anchor-visited:		inherit; 
-	$color_text-anchor-hover:			$color_black; 
-	$color_text-anchor-active:			$color_black; 
+	$color_text-anchor-hover:			inherit; 
+	$color_text-anchor-active:			inherit; 
 	
+	// Text Selection
 	$color_text-selection: 				$color_orange;
 	
 	$color_background:					$color_white;
@@ -71,7 +74,7 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_background-header:			$color_blue;
 	$color_background-hero:				$color_blue;
 	
-	$color-background-pre-header:		transparent;
+	$color-background-pre-header:		$color_black;
 	$color_background-footer:			$color_black;
 	
 	$color_border: 						$color_black;
@@ -80,7 +83,9 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
    Singularity
    ========================================================================== */
 
-	$grids: 									24;
+	// $grids: 									24;
+	$grids: 									add-grid(24 at 480px);
+
 	$gutters: 								1/3;
 
 /* ==========================================================================

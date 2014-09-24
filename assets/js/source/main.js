@@ -212,6 +212,20 @@ var config5 = {
   "showInteraction": true
 };
 
+var configMobile = {
+  "id": '513630939277053952',
+  "domId": 'mobile-twitter-feed',
+  "maxTweets": 1,
+  "enableLinks": true,
+  "showUser": false,
+  "showTime": true,
+  "dateFunction": '',
+  "showRetweet": true,
+  // "customCallback": handleTweets,
+  "showInteraction": true
+};
+twitterFetcher.fetch(configMobile);
+
 var milk_ActiveCarousselTwitter = function () {
 	//twitter carroussel
 	$("#twitter-test").jContent({
@@ -245,4 +259,12 @@ function handleTweets(tweets){
 }
 }); // end Wrap all scripts in this
 
+/* ==========================================================================
+   Sticky sidebar
+   ========================================================================== */
 
+jQuery( document ).ready( function( $ ) { // Wrap all scripts in this
+
+	$("#sticky-sidebar").stick_in_parent();
+    
+});

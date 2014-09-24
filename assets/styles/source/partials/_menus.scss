@@ -49,17 +49,11 @@
 			//background: $color_background-nav;
 			@include border-radius(5px);			
 			display: inline-block;
-			margin-right: 9px;
+			margin-right: 15px;
 			position: relative; // Allow absolute positioning
 		}
 
-		/* Add icon to "books" menu item */
-		&.books-menu-item > a:after {
-			font-family: 'FontAwesome';
-			content: '\f02d'; //  fa-book
-			padding-left: 5px;
-			color: lighten( $color-text-pre-header, 60% );
-		}
+
 
 		ul {
 			@include breakpoint($tablet){

@@ -7,6 +7,26 @@
 
 	.site-info {
 		font-size: 11px;
+		@include breakpoint( $mobile ){	
+			float: left;
+			width: 50%;
+			text-align: left;
+		}
+	}
+
+	a {
+		&:link {
+			@include transition(all, 0.3s, ease-in-out);
+			opacity: .4;
+			text-decoration: none;
+		}
+		&:visited {
+	 	}
+		&:hover {
+			opacity: .7;
+		}
+		&:active {
+		}
 	}
 }
 
@@ -17,6 +37,9 @@
 }
 
 #back-to-top {
-	float: right;
-	width: 30%;
+	@include breakpoint( $mobile ){	
+		float: right;
+		width: 50%;
+		text-align: right;
+	}
 }

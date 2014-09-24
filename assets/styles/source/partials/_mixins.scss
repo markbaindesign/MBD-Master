@@ -268,7 +268,7 @@
 		font-weight: bold;
 		text-decoration: none;
 		letter-spacing: 1px;
-	@include breakpoint(mobile){
+	@include breakpoint($mobile){
 		width: auto;
 		float: right;
 	}

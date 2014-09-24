@@ -13,7 +13,7 @@ get_header(); ?>
 <div class="container">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php get_template_part( 'content', 'portfolio' ); ?>
 
 			<?php // mbdmaster_post_nav(); ?>
 
@@ -38,12 +38,7 @@ get_header(); ?>
 			</div><!-- .container -->
 	</div><!-- #testimonials-slider-single-book .section -->
 
-	<!-- Purchase options -->
-	<div id="purchase-options-single-book" class="section">
-			<div class="container">	
-				<?php	get_template_part( 'content', 'purchase-options' ); ?>
-			</div><!-- .container -->
-	</div><!-- #testimonials-slider-single-book .section -->
+
 
 	<div id="the-books" class="section">
 		<div class="container">	

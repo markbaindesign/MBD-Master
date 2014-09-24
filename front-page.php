@@ -47,15 +47,22 @@
 			<div id="twitter-avatar">
 					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/face.jpg" alt="" title="">				
 			</div><!-- #twitter-avatar -->
-					<div id="tweet-wrapper">
-					<div id="twitter-feed" class="twitter-feed">
-			<div id="twitter-test">
-				<div class="slides">
+			
+			<div id="tweet-wrapper">
+				<div id="twitter-feed" class="twitter-feed">
+					<div id="twitter-test">
+						<div class="slides">
+						</div>
+					</div>
 				</div>
-			</div><!-- #slides -->
+				
+				<div id="mobile-twitter-feed" class="twitter-feed">
+					<div id="twitter-test-2"></div>
+				</div>
+
+			</div><!-- #tweet-wrapper -->
+
 		</div><!-- .container -->
-					</div><!-- #tweet-wrapper -->
-					</div><!-- .container -->
 	</div><!-- .section -->
 
 <?php get_sidebar(); ?>

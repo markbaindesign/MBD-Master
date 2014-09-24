@@ -6,7 +6,8 @@
 	color: $color-text-pre-header;
 	background: $color-background-pre-header;
 	@include breakpoint( $tablet ){
-		padding: .5em;
+		height: 39px;
+		padding: 0 3%;
 	}
 	a {
 		&.toggle {
@@ -25,9 +26,10 @@
 				@include transition(all, 0.3s, ease-in-out);
 			}
 
-			@include breakpoint( tablet ){
+			@include breakpoint( $tablet ){
 				margin: 0;
 				padding: 10px;
+				@include border-radius( 5px );
 			}
 		}
 		&#nav-toggle {
@@ -83,16 +85,18 @@
 /* Hidden Search in Nav */
 
 .js #nav-bar-search {
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 110%;
-  z-index: 1;
- @include transition(all, 0.3s, ease-in-out); 
+  	opacity: 0;
+  	position: absolute;
+  	right: 0;
+  	top: 100%;
+  	z-index: 1;
+  	padding: 10px;
+ 	@include transition(all, 0.3s, ease-in-out); 
 } 
 
 .js-search-active #nav-bar-search {
   opacity: .8;
+  background: $color_grey-light;
   @include transition(all, 0.3s, ease-in-out); 
 } 
 
