@@ -58,19 +58,25 @@ img {
    Typography
    ========================================================================== */
 
-h1 { }
-h2 { }
-h3 { }
-h4 { }
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: $color_orange;
-	font-family: 'Garden Slab';
-	text-transform: uppercase;
+	font-family: 'quatro-slab', sans-serif;
+	// text-transform: uppercase;
 	// letter-spacing: 2px;
 }
 
+h1 {	
+	font-family: 'quatro', sans-serif; 
+	font-weight: 900; 
+	font-style: italic;
+	line-height: 1;
+	text-transform: none;
+}
+
+
+h4 { }
 p {
 	font-family: 'Noto Serif', serif;
 	font-weight: 400;

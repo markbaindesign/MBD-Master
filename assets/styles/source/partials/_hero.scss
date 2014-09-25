@@ -26,9 +26,7 @@
 			width: 45%;
 			float: left;
 		}
-		h1 {
-			@extend h3;
-		}
+
 	}
 	picture {
 		@include breakpoint( $tablet ) {
