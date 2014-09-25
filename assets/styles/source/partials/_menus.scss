@@ -77,14 +77,13 @@
 
 
 .main-navigation a {
-	padding: 10px 3%;
-	display: block;
+	//padding: 10px 3%;
 	text-decoration: none;
-	color: $color_black;
+	color: $color_white;
 	font-size: .88em;
-
+	//display: inline; 
 	&:hover {
-		color: #000;
+		color: $color_orange;
 	}
 }
 
