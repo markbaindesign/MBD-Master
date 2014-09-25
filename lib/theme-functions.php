@@ -118,7 +118,7 @@ function mbdmaster324_scripts() {
 
 
 		// Typekit script 
-		// wp_enqueue_script( 'mbdmaster324-style-typekit', '//use.typekit.net/xxxxxxx.js');
+		wp_enqueue_script( 'mbdmaster324-typekit', '//use.typekit.net/vfi6wgy.js');
 
 		// Enqueue javascript plugins
 		/** 
