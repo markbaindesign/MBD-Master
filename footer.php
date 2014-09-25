@@ -32,8 +32,8 @@
 
 		<div class="social">
 			<ul class="social-media-links">
-				<li><a href="https://twitter.com/mbain"><i aria-hidden="true" class="icon-twitter icon-left"></i><span class="visuallyhidden">Twitter</span></a></li> 
-				<li><a href="https://www.facebook.com/markbaindesign"><i aria-hidden="true" class="icon-facebook icon-left"></i><span class="visuallyhidden">Facebook</span></a></li> 
+				<li><a href="http://twitter.com/MhairiMcF"><i aria-hidden="true" class="icon-twitter icon-left"></i><span class="visuallyhidden">Twitter</span></a></li> 
+				<li><a href="https://www.facebook.com/MhairiMcFarlaneAuthor"><i aria-hidden="true" class="icon-facebook icon-left"></i><span class="visuallyhidden">Facebook</span></a></li> 
 				<!-- <li><a href="<?php bloginfo('rss2_url'); ?>"><i aria-hidden="true" class="icon-feed icon-left"></i><span class="visuallyhidden">RSS</span></a></li>-->
 			</ul>
 		</div><!-- .social -->
