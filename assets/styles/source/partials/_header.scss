@@ -1,14 +1,12 @@
 /* ==========================================================================
    Header
-   ========================================================================== */
+   ==========================================================================de */
 #pre-header {
-	padding: 0;
-	color: $color-text-pre-header;
-	background: $color-background-pre-header;
-	@include breakpoint( $tablet ){
-		height: 39px;
-		padding: 0 3%;
-	}
+	display: none;
+}
+
+.site-header {
+
 	a {
 		&.toggle {
 			// color: $color_white;
@@ -21,17 +19,14 @@
 			border-bottom: 3px solid  $color-background-pre-header;
 			@include transition(all, 0.1s, ease-in-out); 
 			&.active {
-				opacity: 1;
-				background: rgba(0,0,0,.1);
 				@include transition(all, 0.3s, ease-in-out);
 			}
 
 			@include breakpoint( $tablet ){
-				margin: 0;
-				padding: 10px;
-				@include border-radius( 5px );
+
 			}
 		}
+		
 		&#nav-toggle {
 			margin: 0 3% 0 0;
 			float: right;
@@ -41,13 +36,18 @@
 			@include border-bottom-radius( 0 );
 			
 		}	
-		&#search-toggle {
-			@include breakpoint( $tablet ){
-				// display: none;
-				float: right;
-				width: 36px;
-			}
-		}	
+
+	}
+}
+
+
+.site-branding {
+	width: 100%;
+	max-width: 150px;
+	float: left;
+
+	a {
+		display: block;
 	}
 }
 
@@ -104,7 +104,6 @@
 	color: $color_text-header;
 	background: $color_background-header;
 	&.section {
-		padding: 10px 3%;
 	}
 	h1 {
 		margin: 0;

@@ -128,3 +128,25 @@ object {
 		}
 	}
 }
+
+/* ==========================================================================
+   Purchase Options
+   ========================================================================== */
+
+#purchase-options-single-book {
+	ul {
+		@extend .nobullets;
+
+		li {
+			padding-bottom: 10px;
+		}
+
+		a {
+			@include button;
+
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+}

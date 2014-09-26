@@ -12,6 +12,7 @@
 }
 
 .main-navigation {
+	font-size: 1.1em;
 	display: block;
 	width: 100%;
 	@include breakpoint($tablet){
@@ -25,7 +26,7 @@
 	@include clearfix;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 20px 0;
 
 	&.sub-menu {
 		@include breakpoint($tablet){
@@ -44,13 +45,17 @@
 	li {
 
 		text-align: center;
-
 		@include breakpoint($tablet){
 			//background: $color_background-nav;
 			@include border-radius(5px);			
 			display: inline-block;
 			margin-right: 15px;
 			position: relative; // Allow absolute positioning
+		}
+
+		&.current-menu-item,
+		&.current_page_parent {
+			font-weight: bold;
 		}
 
 
@@ -77,18 +82,16 @@
 
 
 .main-navigation a {
-	//padding: 10px 3%;
 	text-decoration: none;
 	color: $color_white;
-	font-size: .88em;
 	//display: inline; 
 	&:hover {
-		color: $color_orange;
 	}
 }
 
+/* Toggles */
 
-#nav-toggle {
+a#nav-toggle {
 	&.active {
 		float: right;
 		&::before {
@@ -97,6 +100,20 @@
 		}
 	}
 }
+
+a#search-toggle {
+
+	@include breakpoint( $tablet ){
+		color: $color_white;
+		margin: 0;
+		padding: 24px 0; // visually adjusted ;)
+		float: right;
+	}
+
+	&:link, &:visited {
+		color: $color_white;
+	}
+}	
 
 /* Indicate hidden menu content */
 .main-navigation li.menu-item-has-children > a:after {

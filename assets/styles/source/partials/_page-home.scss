@@ -3,7 +3,7 @@
    ========================================================================== */
 
 div#tweets {
-	background: darken( $color_blue, 40% );
+	background: $color_blue-green;
 
 	#twitter-avatar {
 		width: 21%;

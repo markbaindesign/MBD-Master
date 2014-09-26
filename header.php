@@ -32,7 +32,23 @@
 	<div id="pre-header" class="section">
 		<?php get_template_part( 'pre-header-search' ); ?>
 		<div class="container">
-			<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
+			
+
+			<?php // get_template_part( 'content', 'social-links' ); ?>
+		</div><!-- .container -->
+	</div><!-- .section -->
+
+	<header id="masthead" class="site-header section" role="banner">
+		<div class="container">
+			<div class="site-branding">
+				<h1 class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-2.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
+					</a>
+				</h1>
+			<!-- 	<h2 class="site-description"><?php // bloginfo( 'description' ); ?></h2> -->
+			</div>
+<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
 			<a id="nav-toggle" class="icon-menu toggle"> <!-- id "menu-toggle" required by responsive-nav.js Using custom toggle so can be translated -->
 				<span class="visuallyhidden"><?php _e( 'Menu', '_mbbasetheme' ); ?></span>
 			</a>
@@ -49,22 +65,6 @@
 			<div id="nav-bar-search">
 
 				<?php get_search_form(); ?></div>
-
-			<?php // get_template_part( 'content', 'social-links' ); ?>
-		</div><!-- .container -->
-	</div><!-- .section -->
-
-	<header id="masthead" class="site-header section" role="banner">
-		<div class="container">
-			<div class="site-branding">
-				<h1 class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
-					</a>
-				</h1>
-			<!-- 	<h2 class="site-description"><?php // bloginfo( 'description' ); ?></h2> -->
-			</div>
-
 		
 		</div><!-- .container -->
 	</header><!-- #masthead -->

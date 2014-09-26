@@ -43,7 +43,10 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	/* Colors */
 	
 	$color_red: 				red; 			/* example */
-	$color_blue: 				#93E8E1; 	/* example */
+	
+	$color_blue: 				#93E8E1; 	/* INMIY cover background */
+	$color_blue-green: 		darken( $color_blue, 40% );
+
 	$color_orange:	 			#A48445; 	
 	$color_green:	 			green; 		/* example */
 
@@ -51,11 +54,11 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	Use these values outside of this stylesheet!
 */
 
-	$color_text:							lighten( $color_black, 30% ); 
+	$color_text:							$color_black; 
 	$color_text-cta:						$color_white; 
 	$color_text-cta-2:					$color_grey; 
 	$color_text-header:					$color_black; 
-	$color-text-pre-header:				$color_black;	
+	$color-text-pre-header:				$color_white;	
 	$color_text-footer:					$color_white; 
 
 	// Links
@@ -71,13 +74,34 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_background-cta:				$color_red;
 	$color_background-cta-2:			$color_white;
 	$color_background-nav:				$color_blue;
-	$color_background-header:			$color_blue;
-	$color_background-hero:				$color_blue;
 	
-	$color-background-pre-header:		$color_black;
+	// Header
+	$color_background-header:			$color_blue-green;
+	
+	$color_background-hero:				$color_grey-light;
+	$color_text-hero:						$color_black;
+	
+	// h1, h2, h3, etc.
+	$color_heading-1-hero:				$color_black;
+	$color_heading-2-hero:				$color_black;
+	$color_heading-3-hero:				$color_black;
+	$color_heading-4-hero:				$color_black;
+	$color_heading-5-hero:				$color_black;
+	$color_heading-6-hero:				$color_black;
+	
+		
+	$color-background-pre-header:		$color_blue-green;
 	$color_background-footer:			$color_black;
 	
 	$color_border: 						$color_black;
+
+	// Buttons
+	$color_text-button:					$color_grey;
+	$color_background-button:			$color_grey-light;
+		$color_text-button-hover:					$color_white;
+		$color_background-button-hover:			$color_grey-dark;
+		$color_text-button-active:					$color_white;
+		$color_background-button-active:			darken( $color_grey-dark, 20%);
 
 /* ==========================================================================
    Singularity

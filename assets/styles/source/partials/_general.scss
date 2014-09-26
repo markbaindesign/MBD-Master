@@ -18,7 +18,10 @@
 body {
 	color: $color_text;
 	text-align: center;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 
+		"abril-text",
+		"tablet-gothic",		
+		sans-serif;
 	@include breakpoint( $mobile-horizontal ) {
 		text-align: left;
 	}
@@ -62,29 +65,121 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: $color_orange;
-	font-family: 'quatro-slab', sans-serif;
-	// text-transform: uppercase;
-	// letter-spacing: 2px;
+	font-family: 
+		/* "abril-fatface", */
+		/* "abril-titling-condensed", */
+		/* "abril-titling-semicondensed", */
+		/* "abril-titling-narrow",		
+		/* "abril-display", */
+		"tablet-gothic",
+		"tablet-gothic-compressed",
+		"tablet-gothic-condensed",
+		"tablet-gothic-wide",		
+		'quatro-slab', 
+		sans-serif;
+
+		font-weight: 500; 
 }
 
 h1 {	
-	font-family: 'quatro', sans-serif; 
-	font-weight: 900; 
+	font-family: sans-serif;
+	
+	/* Abril Family */
+	font-family: "abril-fatface";
+	// font-family: "abril-titling-condensed";
+	// font-family: "abril-display";
+	
+	/* Tablet Gothic Family */
+	// font-family: "tablet-gothic";
+	// font-family: "tablet-gothic-compressed";
+	// font-family: "tablet-gothic-condensed";
+	// font-family: "tablet-gothic-wide";
+
+	/* Weights */
+	// font-weight: 300; /* light */
+	// font-weight: 400; /* regular */
+	// font-weight: 600;	/* semi-bold */
+	// font-weight: 700; /* bold */
+	// font-weight: 800; /* extra-bold */	
+	font-weight: 900; /* heavy/black */
+	
+	/* Style */
 	font-style: italic;
+
 	line-height: 1;
 	text-transform: none;
 }
 
+h2 { 
+	/* Abril Family */
+	font-family: "abril-text";	
+	// font-family: "abril-fatface";
+	// font-family: "abril-titling-condensed";
+	// font-family: "abril-display";
+	
+	/* Tablet Gothic Family */
+	// font-family: "tablet-gothic";
+	// font-family: "tablet-gothic-compressed";
+	// font-family: "tablet-gothic-condensed";
+	// font-family: "tablet-gothic-wide";
 
-h4 { }
+
+	/* Weights */
+	font-weight: 300; /* light */
+	font-weight: 400; /* regular */
+	// font-weight: 600;	/* semi-bold */
+	// font-weight: 700; /* bold */
+	// font-weight: 800; /* extra-bold */	
+	// font-weight: 900; /* heavy */
+}
+
+h3 { 
+	/* Abril Family */
+	font-family: "abril-fatface";
+	font-family: "abril-titling-condensed";
+	font-family: "abril-display";
+	
+	/* Tablet Gothic Family */
+	font-family: "tablet-gothic";
+	font-family: "tablet-gothic-compressed";
+	font-family: "tablet-gothic-condensed";
+	font-family: "tablet-gothic-wide";
+}
+
+h4 { 
+	/* Abril Family */
+	font-family: "abril-text";	
+	font-family: "abril-fatface";
+	font-family: "abril-titling-condensed";
+	font-family: "abril-display";
+	
+	/* Tablet Gothic Family */
+	font-family: "tablet-gothic";
+	// font-family: "tablet-gothic-compressed";
+	// font-family: "tablet-gothic-condensed";
+	font-family: "tablet-gothic-wide";
+
+	/* Weights */
+	font-weight: 300; /* light */
+	// font-weight: 400; /* regular */
+	// font-weight: 600;	/* semi-bold */
+	// font-weight: 700; /* bold */
+	// font-weight: 800; /* extra-bold */	
+	// font-weight: 900; /* heavy */
+
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h5 { font-family: "abril-titling"; }
+h6 { font-family: "abril-titling"; }
+
 p {
-	font-family: 'Noto Serif', serif;
-	font-weight: 400;
 	margin-bottom: 1em;
 }
 
 blockquote {
-	font-family: 'Noto Serif', serif;
+	font-family: "abril-tilting", serif;
 	font-weight: 400;
 	margin: 0 0 2em 0;
 	font-style: italic;
