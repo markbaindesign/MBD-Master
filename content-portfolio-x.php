@@ -1,8 +1,8 @@
 <?php /* Content - Home */ ?>
 
-<div class="media-object">
-
-<aside id="sticky-sidebar">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="hero-lede"><h4 class="wow fadeInRight"><?php	_e( 'Book', '_mbbasetheme' ); ?></h4></div>
+<aside >
 
 	<div class="image-wrapper">
 		<a href="<?php the_permalink(); ?>" >

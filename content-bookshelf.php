@@ -24,7 +24,7 @@
 	<div class="book-item media-object">
 		<a href="<?php the_permalink(); ?>">
 		<article>
-			<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+			<span><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
 		</article>
 		<div class="image-wrapper">
 			<a href="<?php the_permalink(); ?>"><img src="<?php echo $image_url[0]; ?>"></a>

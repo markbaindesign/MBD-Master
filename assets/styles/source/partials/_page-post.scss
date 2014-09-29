@@ -19,12 +19,6 @@
 	display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -129,11 +123,23 @@ object {
 	}
 }
 
+.meta {
+	font-size: .88em;
+	color: $color_grey;
+	font-style: italic;
+
+	a {
+		text-decoration: none;
+		font-style: normal;
+		border-bottom: 1px solid $color_grey;
+	}
+}
+
 /* ==========================================================================
    Purchase Options
    ========================================================================== */
 
-#purchase-options-single-book {
+.purchase-options {
 	ul {
 		@extend .nobullets;
 
@@ -149,4 +155,49 @@ object {
 			}
 		}
 	}
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
+.post-navigation {
+	background: lighten( $color_grey-light, 5%);
+	border-top: $color_grey;
+}
+
+#lead {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: left;
+	@extend .meta-label !optional;
+
+	@include breakpoint( $tablet ){
+		padding-top: 1em;
+		padding-bottom: 0;
+	}
+}
+
+.entry-title {
+	margin-bottom: 1em;
+}
+
+.categories-links {
+	h4 {
+		margin-bottom: 0;
+	}
+}
+
+.tags-links {
+	h4 {
+		margin-bottom: 0;
+	}
+}
+
+.edit-link {display: none;}
+.meta-label {
+	font-family: 'tablet-gothic', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }

@@ -6,7 +6,12 @@
 }
 
 .site-header {
-
+	padding-top: 10px;
+	padding-bottom: 10px;
+	@include breakpoint( $tablet ){
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
 	a {
 		&.toggle {
 			// color: $color_white;
@@ -22,9 +27,7 @@
 				@include transition(all, 0.3s, ease-in-out);
 			}
 
-			@include breakpoint( $tablet ){
 
-			}
 		}
 		
 		&#nav-toggle {

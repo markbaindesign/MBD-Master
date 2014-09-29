@@ -26,9 +26,12 @@
 	@include clearfix;
 	list-style: none;
 	margin: 0;
-	padding: 20px 0;
+	@include breakpoint($tablet){
+		padding: 20px 0;
+	}
 
 	&.sub-menu {
+		background: rgba(0,0,0,.1);
 		@include breakpoint($tablet){
 			width: 150px;
 			background: rgba(255, 255, 255, .8);
@@ -45,36 +48,48 @@
 	li {
 
 		text-align: center;
+		padding: 1em 10px;
+		border-bottom: 1px solid rgba(255,255, 255, .1);
 		@include breakpoint($tablet){
 			//background: $color_background-nav;
-			@include border-radius(5px);			
+			padding: 0;
+			@include border-radius(5px);	
+			border: none;
 			display: inline-block;
 			margin-right: 15px;
 			position: relative; // Allow absolute positioning
 		}
 
+		&:last-of-type {
+			border: none;
+		}
+
 		&.current-menu-item,
 		&.current_page_parent {
-			font-weight: bold;
+			@include breakpoint($tablet){
+				font-weight: bold;
+			}
 		}
 
 
 
 		ul {
+			display: none;
 			@include breakpoint($tablet){
 				left: 0;
 
-				display: none;
 				visibility: hidden;
 				position: absolute; // Overlay other content
 				opacity: 0;
 			}
 		}			
 		&:hover > ul { 
-			display: block; // Sub-menus appear on hover
-			opacity: 1;
-			visibility: visible;
-			@include transition(all, 0.3s, ease-in-out);
+			@include breakpoint($tablet){
+				display: block; // Sub-menus appear on hover
+				opacity: 1;
+				visibility: visible;
+				@include transition(all, 0.3s, ease-in-out);
+			}
 		}
 	}
 }
@@ -117,10 +132,12 @@ a#search-toggle {
 
 /* Indicate hidden menu content */
 .main-navigation li.menu-item-has-children > a:after {
-	font-family: 'FontAwesome';
-	content: '\f0d7'; //  fa-caret-down
-	padding-left: 5px;
-	color: lighten( $color-text-pre-header, 60% );
+	@include breakpoint($tablet){
+		font-family: 'FontAwesome';
+		content: '\f0d7'; //  fa-caret-down
+		padding-left: 5px;
+		color: lighten( $color-text-pre-header, 60% );
+	}
 }
 
 
@@ -130,7 +147,6 @@ a#search-toggle {
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
 	overflow: hidden;
 }
 

@@ -52,6 +52,10 @@
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', '_mbbasetheme' );
+						
+						// Portfolio item archives
+						elseif ( is_post_type_archive( 'portfolio_item' ) ) :
+							_e( 'Books', '_mbbasetheme' ); 
 
 						else :
 							_e( 'Archives', '_mbbasetheme' );

@@ -1,11 +1,9 @@
 .media-object {
 	@include clearfix;
-	margin-bottom: 1em;
 
 	.image-wrapper {
-
-		float: right;
-		width: 27%;
+		padding: 4px;
+		border: 1px solid rgba(0, 0, 0, 0.15);
 		a {
 			display: block; // likely to be wrapped in an anchor tag
 			img {

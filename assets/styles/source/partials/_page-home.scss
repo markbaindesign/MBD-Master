@@ -122,7 +122,6 @@ div#tweets {
 /* Book shelf layout */
 
 .bookshelf {
-	padding: 1em 0;
 	@include clearfix;
 	@include sgs-change('debug', true);
 	// @include background-grid($color: pink);
@@ -144,6 +143,7 @@ div#tweets {
 		}
 		.image-wrapper {
 			width: 48%;
+			float: right;
 		}
 		&:first-of-type {
 			@include breakpoint( $mobile-horizontal ){

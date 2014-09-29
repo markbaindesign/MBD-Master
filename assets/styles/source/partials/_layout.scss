@@ -10,7 +10,10 @@ body,
 
 .section {
 	width: 100%;
-	padding: 3em 3%;
+	padding: 1em 3%;
+	@include breakpoint($tablet) {
+		padding: 3em 3%;
+	}
 
 	.container {
 		position: relative; // Allow absolute positioning of elements
@@ -120,14 +123,7 @@ a#search-toggle {
 			float: left;
 			margin: 0 -35% 0 0;
 		}
-		blockquote {
-			@include breakpoint($tablet) {
-				margin: 0 35% 0 0;
-				p {
-					margin: 0;
-				}
-			}		
-		}
+
 	}
 	.media_block-image {
 		text-align: center;
@@ -137,18 +133,9 @@ a#search-toggle {
 		}
 		img {
 			margin-bottom: 1em;
+			max-width: 66px;
 		}
 	}
 }
 
-/* No Sidebar */
 
-.no-sidebar {
-	article {
-		@include center-block;
-		max-width: 700px;
-		font-size: 20px;
-		line-height: 1.5;
-		letter-spacing: 0.01rem;
-	}
-}

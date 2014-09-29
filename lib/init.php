@@ -71,6 +71,7 @@ function _mbbasetheme_setup() {
 
 	// Add Image Sizes
 	// add_image_size( $name, $width = 0, $height = 0, $crop = false );
+	add_image_size( 'book-cover', 234, 360, true );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( '_mbbasetheme_custom_background_args', array(
