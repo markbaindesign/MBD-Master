@@ -1,6 +1,6 @@
 <!-- Testimonials -->
 <div id="single-book-testimonials">
-	<h3>What people are saying about <span><?php the_title(); ?></span></h3>
+	<div id="testimonials-title">What people are saying about <span><?php the_title(); ?></span></div>
 
 <section id="slider">
       <div class="flexslider">

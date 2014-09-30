@@ -128,7 +128,11 @@ function mbdmaster324_scripts() {
 		
 		// Custom scripts
 		wp_enqueue_script( 'mbdmaster324_customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array() );
-
+		
+		if ( is_singular( 'portfolio_item' )) {
+			// Conditionally load 
+			wp_enqueue_script( 'mbdmaster324_customscripts-2', get_template_directory_uri() . '/assets/js/portfolio.min.js', array() );
+		}
 	}
 }
 

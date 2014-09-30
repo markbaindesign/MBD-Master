@@ -1,8 +1,5 @@
-<h3>What people are saying about...</h3>
-<div class="readmore">
-	<a href="" title="See more of these">See more</a>
-</div>
-<h5>You had me at Hello</h5>
+<h3>Nice stuff people are saying</h3>
+
 <section id="slider">
       <div class="flexslider">
         <ul class="slides">

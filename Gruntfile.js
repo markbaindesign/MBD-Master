@@ -115,7 +115,20 @@ module.exports = function(grunt) {
                         'assets/js/source/main.js'
                     ]
                 }
+            },
+            portfolio: {
+                options: {
+                    sourceMap: 'assets/js/portfolio.js.map',
+                    sourceMappingURL: 'portfolio.js.map',
+                    sourceMapPrefix: 2
+                },
+                files: {
+                    'assets/js/portfolio.min.js': [
+                        'assets/js/source/portfolio.js'
+                    ]
+                }
             }
+				
         },
 
         // image optimization

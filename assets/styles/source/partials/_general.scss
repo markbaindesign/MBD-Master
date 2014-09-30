@@ -114,6 +114,15 @@ h6 {
 	font-weight: 900; 
 }
 
+.h2-meta { 
+	@extend .h2;
+	@extend .meta;
+	font-family: "tablet-gothic", sans-serif;;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+
 
 .h3 { 
 	font-size: 1.999em;
@@ -140,15 +149,20 @@ blockquote {
 		@extend .h1;
 		content: '“';
 		line-height: 1;
+		position: absolute;
+		text-align: center;
+		left: -9px; /* Hand made :) */
+		width: 100%;
 		@include breakpoint( $tablet ){
 			position: absolute;
 			padding-right: 4px;
+			text-align: left;
 		}
 	}
 
 	p {
+		padding-top: 40px;
 		@include breakpoint( $tablet ){
-			margin-left: 2.6em;
 		}
 	}
 }

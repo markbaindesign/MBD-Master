@@ -48,23 +48,28 @@
 				</h1>
 			<!-- 	<h2 class="site-description"><?php // bloginfo( 'description' ); ?></h2> -->
 			</div>
-<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
-			<a id="nav-toggle" class="icon-menu toggle"> <!-- id "menu-toggle" required by responsive-nav.js Using custom toggle so can be translated -->
+
+			<a id="nav-toggle" class="toggle"><!-- id "menu-toggle" required by responsive-nav.js Using custom toggle so can be translated -->
 				<span class="visuallyhidden"><?php _e( 'Menu', '_mbbasetheme' ); ?></span>
 			</a>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mbbasetheme' ); ?></a>
-			<?php 
-				wp_nav_menu( 
-					array( 
-						'theme_location' => 'primary', 
-						'container' => 'nav', 
-						'container_class' => 'nav-collapse main-navigation' // Required by responsive-nav.js
-					) 
-				); 
-			?>
-			<div id="nav-bar-search">
 
-				<?php get_search_form(); ?></div>
+			<nav class="nav-collapse main-navigation">
+			<a id="search-toggle" class="icon-search toggle"><span class="visuallyhidden">Search</span></a>
+			<?php 
+					wp_nav_menu( 
+						array( 
+							'theme_location' => 'primary', 
+							'container' => 'ul', 
+							'container_class' => 'nav-collapse main-navigation' // Required by responsive-nav.js
+						) 
+					); 
+				?>
+				
+				
+				<div id="nav-bar-search"><?php get_search_form(); ?></div>
+			</nav><!-- .nav-collapse .main-navigation -->
+			
 		
 		</div><!-- .container -->
 	</header><!-- #masthead -->

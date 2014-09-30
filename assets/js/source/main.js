@@ -40,7 +40,7 @@ jQuery( document ).ready( function( $ ) {
 
 jQuery(document).ready(function( $ ){
 
- var navigation2 = responsiveNav(".hidden-search", {
+var navigation2 = responsiveNav(".hidden-search", {
      customToggle: "search-toggle",
 	  navClass: "hidden-search", // String: Default CSS class. If changed, you need to edit the CSS too!
   		navActiveClass: "js-search-active", //
@@ -150,11 +150,12 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 
 $(window).load(function() {
     $('.flexslider').flexslider({
-animationLoop: false,
-    slideshow: false,
+			animationLoop: false,
+    		slideshow: false,
 			animation: "slide",
     		controlNav: "thumbnails",
-		 directionNav: false,
+		 	directionNav: false,
+		 	smoothHeight: true,
 	 	});
   });
 

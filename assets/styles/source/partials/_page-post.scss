@@ -135,27 +135,6 @@ object {
 	}
 }
 
-/* ==========================================================================
-   Purchase Options
-   ========================================================================== */
-
-.purchase-options {
-	ul {
-		@extend .nobullets;
-
-		li {
-			padding-bottom: 10px;
-		}
-
-		a {
-			@include button;
-
-			span {
-				font-weight: bold;
-			}
-		}
-	}
-}
 
 .entry-title a {
 	text-decoration: none;

@@ -4,7 +4,7 @@
 			<div class="container">
 				<div id="lead">Now available in all leading book shops!</div>
 				<div class="hero-image">
-					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/ck6.jpg" alt="" title="'Holding Out for a Hero' is a song recorded by Welsh singer Bonnie Tyler for the soundtrack to the 1984 film Footloose, and later appeared on her album Secret Dreams and Forbidden Fire (1986). It was written by Jim Steinman and Dean Pitchford. Initially, the song only just reached the Top 100 in the UK Singles Chart, but made it to number 2 the following year, and re-entered the charts again at number 69 in 1991. The song reached No. 1 on the Irish Singles Chart on 28 September 1985.">
+					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/ck6.jpg" alt="" title="'">
 				</div>
 				<div class="hero-text">
 					<h1>Nullam vehicula mi quis tristique venenatis.</h1>

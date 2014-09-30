@@ -89,7 +89,6 @@ input[type="search"] {
 		background: transparent;
    	border-width: 0;
     	padding: $block-padding;
-		margin: $block-padding;
 	}
 
 
@@ -120,16 +119,14 @@ a#search-toggle {
 	.media_block-text {
 		width: 100%;
 		@include breakpoint($tablet) {
-			float: left;
-			margin: 0 -35% 0 0;
+
 		}
 
 	}
 	.media_block-image {
 		text-align: center;
 		@include breakpoint($tablet) {
-			float: right;
-			width: 20%;
+
 		}
 		img {
 			margin-bottom: 1em;
