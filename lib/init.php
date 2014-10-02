@@ -142,7 +142,12 @@ function _mbbasetheme_setup() {
 	add_action( 'wp_head', 'mbdmaster324_typekit_inline' );
 
 	// Testimonials shortcode
+	// Function location: mu-plugins
 	add_action( 'init', 'mbdmaster324_register_shortcode' );
+
+	// Posts 2 Posts plugin settings
+	// Function location: mu-plugins
+	add_action( 'p2p_init', 'mbdmaster324_connection_types' );
 
 }
 endif; // _mbbasetheme_setup
