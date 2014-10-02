@@ -141,6 +141,9 @@ function _mbbasetheme_setup() {
 	// Typekit Webfonts Inline Script
 	add_action( 'wp_head', 'mbdmaster324_typekit_inline' );
 
+	// Testimonials shortcode
+	add_action( 'init', 'mbdmaster324_register_shortcode' );
+
 }
 endif; // _mbbasetheme_setup
 
