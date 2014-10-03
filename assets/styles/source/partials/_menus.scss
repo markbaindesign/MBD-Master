@@ -31,16 +31,31 @@
 	}
 
 	&.sub-menu {
-		background: rgba(0,0,0,.1);
 		@include breakpoint($tablet){
-			width: 150px;
-			background: rgba(255, 255, 255, .8);
+			padding: 0;
+			width: 200px;
+			background: $color_white;
+			color: $color_grey;
 			z-index: 2;
+			@include box-shadow();
 
 			li {
 				width: 100%;
 				text-align: left;
 				margin: 0;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+
+				a {
+					display: block;
+					color: $color_grey;
+					&:hover {
+						color: $color_black;
+					}
+				}
+
+				ul { /* Level 2 sub menu */
+					left: -100%;
+				}
 			}
 		}
 	}
@@ -49,11 +64,9 @@
 
 		text-align: center;
 		padding: 1em 10px;
-		border-bottom: 1px solid rgba(255,255, 255, .1);
 		@include breakpoint($tablet){
 			//background: $color_background-nav;
-			padding: 0;
-			@include border-radius(5px);	
+			padding: 20px 0;
 			border: none;
 			display: inline-block;
 			margin-right: 15px;
@@ -64,24 +77,42 @@
 			border: none;
 		}
 
-		&.current-menu-item,
-		&.current_page_parent {
+		&.current-menu-item > a,
+		&.current_page_parent > a {
 			@include breakpoint($tablet){
 				font-weight: bold;
 			}
 		}
 
+		&.menu-item-has-children > a:after {
+			@include breakpoint($tablet){
+				font-family: 'FontAwesome';
+				content: '\f0d7'; //  fa-caret-down
+				padding-left: 5px;
+				opacity: .6;
+			}
+		}
 
 
-		ul {
+
+		ul { /* sub menus */
 			display: none;
 			@include breakpoint($tablet){
-				left: 0;
-
+				right: 0;
 				visibility: hidden;
 				position: absolute; // Overlay other content
 				opacity: 0;
 			}
+			&.menu-item-has-children > a:after {
+				@include breakpoint($tablet){
+					font-family: 'FontAwesome';
+					content: '\f0d7'; //  fa-caret-down
+					padding-left: 5px;
+					opacity: .6;
+				}
+			}
+			
+
 		}			
 		&:hover > ul { 
 			@include breakpoint($tablet){
@@ -165,15 +196,8 @@ a#search-toggle {
 	}
 }
 
-/* Indicate hidden menu content */
-.main-navigation li.menu-item-has-children > a:after {
-	@include breakpoint($tablet){
-		font-family: 'FontAwesome';
-		content: '\f0d7'; //  fa-caret-down
-		padding-left: 5px;
-		color: lighten( $color-text-pre-header, 60% );
-	}
-}
+
+
 
 
 
