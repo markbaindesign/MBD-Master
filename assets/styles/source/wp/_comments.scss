@@ -1,5 +1,14 @@
 #comments {
-	margin-top: 2em;
+	
+	#list-comments {
+		background: #e7e7e7;
+	}
+	#form-comments {
+		background: #e3e3e3;
+	}
+	#closed-comments {
+		@extend #form-comments;
+	}
 	ol {
 		margin: 0;
 		padding: 0;
@@ -18,6 +27,10 @@
 			}
 			
 		}
+	}
+
+	#reply-title {
+		@extend h2;
 	}
 
 
@@ -51,8 +64,7 @@ ol.comment-list {
 
 .comment-list li.comment {
 
-line-height: 24px;
-margin: 0 0 24px 0;
+
 
 position: relative;
 }
@@ -96,7 +108,7 @@ margin: 0;
 /* Respond */
 
 .comment-respond {
-	padding-top: 2em;
+
 }
 
 /* Comment Form */

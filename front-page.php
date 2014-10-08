@@ -2,7 +2,7 @@
 
 		<div class="hero section">
 			<div class="container">
-				<div id="lead">Now available in all leading book shops!</div>
+				<!-- <div id="lead">Now available in all leading book shops!</div> -->
 				<div class="hero-image">
 					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/ck6.jpg" alt="" title="'">
 				</div>

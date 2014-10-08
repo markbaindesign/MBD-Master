@@ -34,8 +34,8 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	/* Shades */
 	
 	$color_black: 				#333;		/* example */
-	$color_white: 				#ffffff;		/* example */
-	
+	$color_white: 				rgba(255,255,255,0.9);	
+	$color_white-bright: 	#fff;
 	$color_grey-dark: 		darken($color_white, 80%);
 	$color_grey: 				darken($color_white, 50%);
 	$color_grey-light: 		darken($color_white, 10%);
@@ -59,13 +59,13 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-cta-2:					$color_grey; 
 	$color_text-header:					$color_black; 
 	$color-text-pre-header:				$color_white;	
-	$color_text-footer:					$color_white; 
+	$color_text-footer:					$color_grey; 
 
 	// Links
-	$color_text-anchor:					inherit; 
-	$color_text-anchor-visited:		inherit; 
-	$color_text-anchor-hover:			inherit; 
-	$color_text-anchor-active:			inherit; 
+	$color_text-anchor:					$color_black; 
+	$color_text-anchor-visited:		$color_black; 
+	$color_text-anchor-hover:			$color_black; 
+	$color_text-anchor-active:			$color_black; 
 	
 	// Text Selection
 	$color_text-selection: 				$color_orange;

@@ -21,16 +21,15 @@ ul.social-media-links {
 // Tweaks
 
 .social {
-	@include breakpoint( $mobile ){
-	  	float: left;
+	@include breakpoint( $tablet ){
+	  	// float: left;
 		text-align: left;
 		width: 50%;
 	}
 }
 
 ul.social-media-links {
-	@include breakpoint( $mobile ){
-	  	margin-bottom: 0;
+	@include breakpoint( $tablet ){
 	}	
 
 	li {

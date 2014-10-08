@@ -13,6 +13,7 @@
 		padding-bottom: 1em;
 	}
 	a {
+		border-bottom: none;
 		&.toggle {
 			color: $color_white;
 			float: right;
@@ -28,6 +29,12 @@
 
 	a {
 		display: block;
+		opacity: .8;
+		@include transition(all, 0.3s, ease-in-out); 
+		&:hover {
+			opacity: 1;
+			@include transition(all, 0.3s, ease-in-out); 
+		}
 	}
 }
 
@@ -115,9 +122,20 @@
 .site-header {
 	color: $color_text-header;
 	background: $color_background-header;
+	@include transition(all, 0.3s, ease-in-out);
 	&.section {
 	}
 	h1 {
 		margin: 0;
 	}
+}
+
+.js-nav-active .site-header {
+ 	@include transition(all, 0.3s, ease-in-out); 	
+	background: darken( $color_background-header, 5%);
+}
+
+.js-search-active .site-header {
+ 	@include transition(all, 0.3s, ease-in-out); 	
+	background: darken( $color_background-header, 5%);
 }

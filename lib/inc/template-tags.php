@@ -35,7 +35,7 @@ function _mbbasetheme_paging_nav() {
 }
 endif;
 
-if ( ! function_exists( '_mbbasetheme_post_nav' ) ) :
+if ( ! function_exists( 'mbdmaster_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  */

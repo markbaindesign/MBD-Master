@@ -8,18 +8,21 @@ function mbdmaster_comment_form($fields) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 
 $fields['author'] = 
-        '<p class="comment-form-author">
-            <input required placeholder="Your Name*" id="author" name="author" type="text" value="" aria-required="true"></p>';
+        '<p class="username field"> 
+							  <label for="usernamesignup" class="uname" data-icon="u"><i class="fa fa-user"></i> Your name</label>
+            <input required placeholder="i.e. John Doe" id="author" name="author" type="text" value="" aria-required="true"></p>';
  
     $fields['email'] = 
-        '<p class="comment-form-email">
-            <input required placeholder="Your Email*" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+        ' <p class="emailaddress field"> 
+							  <label for="emailsignup" class="youmail" data-icon="e" ><i class="fa fa-envelope"></i> Your email</label>
+            <input required placeholder="i.e. johndoe@mail.com" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' />
         </p>';
  
     $fields['url'] = 
-        '<p class="comment-form-url">
-            <input placeholder="Your URL (website, twitter...)" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
+        '<p class="url field"> 
+							  <label for="emailsignup" class="youmail" data-icon="e" ><i class="fa fa-chain"></i> Your URL (website, twitter, etc.)</label>
+            <input placeholder="i.e. google.com" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" />
         </p>';
  
@@ -31,8 +34,8 @@ $fields['author'] =
 function mbdmaster_comment_field($comment_field) {
  
     $comment_field = 
-        '<p class="comment-form-comment">
-            <textarea required placeholder="Your Comment" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+        '<p class="comment-form-comment"><label for="emailsignup" class="youmail" data-icon="e" ><i class="fa fa-pencil"></i> Your comment</label>
+            <textarea required placeholder="Blah blah blah..." id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
         </p>';
  
     return $comment_field;

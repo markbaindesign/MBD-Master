@@ -83,4 +83,7 @@ div.wpcf7 .placeheld {
 	color: #888;
 }
 
-
+textarea {
+	@extend input;
+	@extend blockquote;
+}

@@ -10,8 +10,9 @@ form {
 
 
 	label {
+		@extend .meta;
 		display: block;
-		opacity: .5;
+	
 		text-align: left;
 		padding-bottom: 5px;
 		@include breakpoint( $mobile ) {
@@ -20,29 +21,19 @@ form {
 		}	
 	}
 
-	p {
-	
-			&.emailaddress { /* User's email address */
-				display: block;	
-				width: 100%;
+	p.field {
+		display: block;	
+		width: 100%;
 
-				@include breakpoint( $tablet ) {
-					width: 50%;
-					display: table-cell;
-					padding-right: 10px;
-				}
-			}
+		@include breakpoint( $tablet ) {
+			width: 33.333333%;
+			display: table-cell;
+			padding-right: 10px;
+		}	
 
-			&.username { /* User's name */
-
-				@include breakpoint( $tablet ) {
-					display: table-cell;
-					width: 50%;
-					padding-right: 10px;
-				}
-			}
 			
 			&.signin { /* The sign up button */
+				@include cta-primary;
 				display: block;
 				width: 100%;
 				@include breakpoint( $mobile ) {

@@ -5,6 +5,10 @@
 div#tweets {
 	background: $color_blue-green;
 
+	a {
+		border-bottom: none;
+	}
+
 	#twitter-avatar {
 		width: 21%;
 		@include center-block;		
@@ -49,7 +53,7 @@ div#tweets {
 		}
 			
 		.tweet {
-			text-shadow: 1px 1px 1px darken( $color_blue, 45% );
+			// text-shadow: 1px 1px 1px darken( $color_blue, 45% );
 		}
 
 		p {
@@ -90,6 +94,11 @@ div#tweets {
 					a {
 						margin-left: 20px;
 						text-decoration: none;
+						opacity: .6;
+
+						&:hover {
+							opacity: 1;
+						}
 
 						span {
 							@extend .visuallyhidden;

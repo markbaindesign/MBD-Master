@@ -38,9 +38,7 @@
 			</ul>
 		</div><!-- .social -->
 
-		<div id="back-to-top" >
-			<a href="#header" title="Go back to the top" class=""><span class="visuallyhidden">Back to top</span> <span class="fa-stack"><i class="fa fa-angle-double-up fa-inverse fa-stack-1x"></i><i class="fa fa-circle-o fa-stack-2x"></i></span></a>
-		</div><!-- #back-to-top -->
+
 
 
 		<div class="site-info">
@@ -52,6 +50,11 @@
 		</div><!-- #design -->
 
 		</div><!-- .site-info -->
+
+		<div id="back-to-top" >
+			<a href="#header" title="Go back to the top" class=""><span class="visuallyhidden">Back to top</span> <span class="fa-stack"><i class="fa fa-angle-double-up fa-inverse fa-stack-1x"></i><i class="fa fa-circle-o fa-stack-2x"></i></span></a>
+		</div><!-- #back-to-top -->
+
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
 

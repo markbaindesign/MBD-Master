@@ -40,12 +40,23 @@ body {
    Links
    ========================================================================== */
 
-a,
-a:visited {
-	color: $color_text-anchor;
-}
-a:hover {
-	color: $color_text-anchor-hover;
+a {
+	border-bottom: 1px solid $color_text-anchor;
+	text-decoration: none;
+	@include transition(all, 0.3s, ease-in-out);
+	&:link {
+		color: $color_text-anchor;
+		@include transition(all, 0.3s, ease-in-out);
+	}
+	&:visited {
+		color: $color_text-anchor;
+		@include transition(all, 0.3s, ease-in-out);
+	}
+	&:hover {
+		color: $color_text-anchor-hover;
+		border-bottom: 2px solid $color_text-anchor-hover;
+		@include transition(all, 0.3s, ease-in-out);
+	}
 }
 
 
@@ -75,6 +86,9 @@ h1, h2, h3, h4, h5, h6 {
 		/* "abril-display", */
 	font-weight: 900; /* heavy/black */
 	font-style: italic;
+	a {
+		border-bottom: none;
+	}
 }
 
 h1 {
