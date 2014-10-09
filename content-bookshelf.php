@@ -29,7 +29,7 @@
 		<div class="image-wrapper">
 			<a href="<?php the_permalink(); ?>"><img src="<?php echo $image_url[0]; ?>"></a>
 		</div>
-	</div>
+	</div> <!-- .book-item -->
 
 				<?php endwhile; ?>
 				<?php 

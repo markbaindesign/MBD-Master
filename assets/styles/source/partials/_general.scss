@@ -129,7 +129,6 @@ h6 {
 }
 
 .h2-meta { 
-	@extend .h2;
 	@extend .meta;
 	font-family: "tablet-gothic", sans-serif;;
 	text-transform: uppercase;
@@ -151,7 +150,7 @@ small, .font_small {
 }
 
 p {
-	margin-bottom: 1em;
+	margin: 0 0 1em 0; // Browser will set "margin-before", so be explicit!
 }
 
 blockquote {

@@ -4,7 +4,7 @@
 			<div class="container">
 				<!-- <div id="lead">Now available in all leading book shops!</div> -->
 				<div class="hero-image">
-					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/ck6.jpg" alt="" title="'">
+					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero.jpg" alt="" title="'">
 				</div>
 				<div class="hero-text">
 					<h1>Nullam vehicula mi quis tristique venenatis.</h1>
@@ -19,19 +19,6 @@
 			</div><!-- .container -->
 	</div><!-- .hero -->
 
-	<div class="section">
-		<div class="container">	
-			<?php	get_template_part( 'module', 'slider' ); ?>
-		</div><!-- .container -->
-	</div><!-- .section -->
-
-	<div class="section">
-		<div class="container">	
-			<h2>Etiam commodo malesuada ante</h2>
-			<?php	get_template_part( 'content', 'table' ); ?>
-		</div><!-- .container -->
-	</div><!-- .section -->
-
 	<div id="the-books" class="section">
 		<div class="container">	
 			<h2>Morbi volutpat, urna eu fermentum rutrum</h2>
@@ -39,10 +26,23 @@
 		</div><!-- .container -->
 	</div><!-- .section -->
 
+	<div id="quotes" class="section">
+		<div class="container">	
+			<?php	get_template_part( 'module', 'slider' ); ?>
+		</div><!-- .container -->
+	</div><!-- .section -->
+
+	<div id="events" class="section">
+		<div class="container">	
+			<h2>Etiam commodo malesuada ante</h2>
+			<?php	get_template_part( 'content', 'table' ); ?>
+		</div><!-- .container -->
+	</div><!-- .section -->
+
 	<div id="tweets" class="section">
 		<div class="container">
 			<div id="twitter-avatar">
-					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/face.jpg" alt="" title="">				
+					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero.jpg" alt="" title="">				
 			</div><!-- #twitter-avatar -->
 			
 			<div id="tweet-wrapper">

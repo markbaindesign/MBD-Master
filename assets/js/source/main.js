@@ -68,7 +68,7 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 		$container = $('.masonrycontainer').masonry({
 			columnWidth: 		'.grid-sizer',
 			gutter: 				'.gutter-sizer',
-			itemSelector: 		"aside"
+			itemSelector: 		".section"
 		
 		});
 		

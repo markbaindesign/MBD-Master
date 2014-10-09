@@ -2,34 +2,14 @@
    Forms
    ========================================================================== */
 #signup {
-	background: $color_grey-light;
+	color: $color_text-signup;
+	background: $color_background-signup;
 }
 
 form {
-	@include clearfix;
-
-
-	label {
-		@extend .meta;
-		display: block;
-	
-		text-align: left;
-		padding-bottom: 5px;
-		@include breakpoint( $mobile ) {
-		}
-		@include breakpoint( $tablet ) {
-		}	
-	}
 
 	p.field {
-		display: block;	
-		width: 100%;
 
-		@include breakpoint( $tablet ) {
-			width: 33.333333%;
-			display: table-cell;
-			padding-right: 10px;
-		}	
 
 			
 			&.signin { /* The sign up button */
@@ -67,10 +47,10 @@ input {
 	width: 100%;
 	border-radius: 5px;
 	background: rgba(0, 0, 0, .1);
-	color: $color_black;
 	
 	&[type=submit] {
 		// @include cta-primary;
+
 		background: rgba(0, 0, 0, .3);
 		color: $color_white;		
 		border: none;

@@ -13,6 +13,7 @@
 
 .main-navigation {
 	font-size: 1.1em;
+	font-family: "tablet-gothic", sans-serif;
 	display: block;
 	width: 100%;
 	@include breakpoint($tablet){

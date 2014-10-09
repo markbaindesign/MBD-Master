@@ -138,6 +138,7 @@ object {
 
 .entry-title a {
 	text-decoration: none;
+	border-bottom: none;
 }
 
 .post-navigation {
@@ -164,13 +165,15 @@ object {
 
 .categories-links {
 	h4 {
-		margin-bottom: 0;
+		@extend .h2-meta;	
+		margin-bottom: 5px;
 	}
 }
 
 .tags-links {
 	h4 {
-		margin-bottom: 0;
+		@extend .h2-meta;
+		margin-bottom: 5px;
 	}
 }
 

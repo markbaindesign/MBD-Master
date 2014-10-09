@@ -2,33 +2,26 @@
 
 .masonrycontainer {
 	@include clearfix;
-
-	aside {
-		width: 100%;
-		@include breakpoint(mobile-horizontal) {
-			width: $grid-sizer-1;
-		}
-		@include breakpoint($tablet-horizontal) {
-			width: $grid-sizer-2;
-		}
-	}
 }
 
 
+/* Grid Sizer */
 
 .grid-sizer {
 	width: 100%;
-	@include breakpoint(mobile-horizontal) {
+	@include breakpoint( $mobile-horizontal ) {
 		width: $grid-sizer-1;
 	}
-	@include breakpoint($tablet-horizontal) {
+	@include breakpoint( $tablet ) {
 		width: $grid-sizer-2;
 	}
 }
 
+/* Gutter Sizer */
+
 .gutter-sizer {
 	width: 0; // No gutter
-	@include breakpoint(mobile-horizontal) {
+	@include breakpoint( $mobile-horizontal ) {
 		width: $gutter-sizer-1;
 	}
 }
