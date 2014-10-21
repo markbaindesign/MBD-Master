@@ -136,7 +136,7 @@ function _mbbasetheme_setup() {
 
 	// Remove Read More Jump
 	// Function location: /lib/theme-functions.php
-	add_filter( 'the_content_more_link', 'mb_remove_more_jump_link' );
+	// add_filter( 'the_content_more_link', 'mb_remove_more_jump_link' );
 
 	// Typekit Webfonts Inline Script
 	add_action( 'wp_head', 'mbdmaster324_typekit_inline' );

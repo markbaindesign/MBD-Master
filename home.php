@@ -10,9 +10,7 @@
 					<p>Morbi egestas fringilla nibh. Nulla augue urna, egestas sed scelerisque sit amet, pharetra quis libero. Ut luctus bibendum nulla ac bibendum.</p> 
 
 				
-					<div class="hero-cta">
-						<div class="wow fadeInLeft"><a href="" class="cta button cta-primary">Do this <i aria-hidden="true" class="icon-arrow-right"></i></a></div>
-					</div>
+					
 				</div><!-- .hero-text -->
 			</div><!-- .container -->
 	</div><!-- .hero -->

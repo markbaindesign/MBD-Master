@@ -1,5 +1,6 @@
 .hero {
 	@include clearfix;
+	min-height: 333px;
 	position: relative;
 	@include palette-1;
 	@include add-grid(24 at 480px);

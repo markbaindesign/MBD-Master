@@ -5,10 +5,12 @@
 
 			<aside>				
 				<div class="image-wrapper">
-					<?php if ( has_post_thumbnail() ) { 
-							the_post_thumbnail( 'book-cover' ); 
-						} 
-					?>
+					<a href="<?php the_permalink(); ?>" >
+						<?php if ( has_post_thumbnail() ) { 
+								the_post_thumbnail( 'book-cover' ); 
+							} 
+						?>
+					</a>
 				</div><!-- .image-wrapper -->
 			</aside>	
 	
@@ -24,6 +26,7 @@
 					<?php	mbdmaster_posted_on(); ?>
 				</div><!-- .entry-meta -->			
 				<?php the_excerpt(); ?>
+				<span class="read-more"><a href="<?php the_permalink(); ?>" class="button cta">Read more</a></span>
 			</div><!-- .entry-content -->
 
 		</article><!-- #post-## -->

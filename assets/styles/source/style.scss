@@ -70,6 +70,7 @@ Tags:
 @import "partials/forms";
 
 // WordPress
+@import "partials/wp/wp";
 @import "wp/wp"; // WP-generated classes
 @import "wp/widgets";
 @import "wp/comments";

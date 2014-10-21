@@ -67,10 +67,19 @@ article {
 .blog-post {
 	position: relative;
 	@include palette-1;
+	a {
+		&:link, &:visited {
+			border-bottom: none;
+		}
+	}
 	
 	&:nth-child(2n) {
 		@include palette-2;
-		
+		a {
+			&:link, &:visited {
+				border-bottom: none;
+			}
+		}
 		&::before, &::after {
 			// background: darken( $color_background-books, 3%);
 		}
