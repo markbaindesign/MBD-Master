@@ -1,33 +1,27 @@
-<?php /* Index */ get_header(); ?>
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+<?php /* Blog template */ get_header(); ?>
+
+		<div class="hero section">
+			<div class="container">
+				<div class="hero-image">
+				
+				</div>
+				<div class="hero-text">
+					<h1>This bit is my blog.</h1>
+					<p>Morbi egestas fringilla nibh. Nulla augue urna, egestas sed scelerisque sit amet, pharetra quis libero. Ut luctus bibendum nulla ac bibendum.</p> 
+
+				
+					<div class="hero-cta">
+						<div class="wow fadeInLeft"><a href="" class="cta button cta-primary">Do this <i aria-hidden="true" class="icon-arrow-right"></i></a></div>
+					</div>
+				</div><!-- .hero-text -->
+			</div><!-- .container -->
+	</div><!-- .hero -->
+
 	
-			<div id="lead" class="section">
-				<div class="container">
-					<div class="hero-lede">
-							<?php 
-						
-									_e( 'Blog', '_mbbasetheme' ); 
-
-
-							?>
-					</div><!-- .hero-lede -->
-				</div><!-- .container -->
-			</div><!-- .section -->
-
-<?php if ( have_posts() ) : ?>
-	<div class="section">
-		<div class="container grid-wrapper masonrycontainer">
-			<div class="grid-sizer"></div>
-			<div class="gutter-sizer"></div>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'archive' ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', 'single' ); ?>
 			<?php endwhile; // end of the loop. ?>
-		</div><!-- .grid-wrapper -->
-	</div><!-- .section -->
 	<?php wp_pagenavi(); ?>
-<?php endif; ?>	 
-	</main><!-- #main -->
-</div><!-- #primary -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

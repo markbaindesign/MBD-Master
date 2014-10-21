@@ -64,3 +64,51 @@ article {
 	}
 }
 
+.blog-post {
+	position: relative;
+	@include palette-1;
+	
+	&:nth-child(2n) {
+		@include palette-2;
+		
+		&::before, &::after {
+			// background: darken( $color_background-books, 3%);
+		}
+
+		&::before {
+			background: darken( $color_background-books, 6%);
+		}
+	}
+	
+	&::before,
+	&::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+	top: 0;
+	left: -25%;
+	z-index: 0;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+&::before {
+	z-index: 0;
+	height: 50%;
+	background: darken($color_orange, 6%);
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+	.container {
+		z-index: 1;
+		position: relative;
+	}
+}
