@@ -19,7 +19,7 @@
 
 	
 				<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'single' ); ?>
+				<?php get_template_part( 'content', 'blog' ); ?>
 			<?php endwhile; // end of the loop. ?>
 	<?php wp_pagenavi(); ?>
 

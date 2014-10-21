@@ -1,30 +1,10 @@
 
 	</div><!-- #content -->
-	
-	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div id="footer-widgets" class="widget-area section">
-			
-				
-				<div class="masonrycontainer container">
-					<div class="grid-sizer"></div>
-					<div class="gutter-sizer"></div>				
-					<?php dynamic_sidebar( 'sidebar-2' ); ?>
-				
-				
-				</div>
-				
-			
-		</div><!-- .widget-container -->
-	<?php endif; ?>
 
 
 
-	<!-- Newsletter signup section -->
-	<div id="signup" class="section">
-		<div class="container">
-			<?php get_template_part( 'content', 'signup-form' ); ?>
-		</div><!-- .container -->
-	</div><!-- #signup .section -->
+
+
 
 	<footer id="colophon" class="section site-footer" role="contentinfo">
 		<div class="container">

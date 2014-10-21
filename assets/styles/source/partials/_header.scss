@@ -82,6 +82,8 @@
 	@include breakpoint( $tablet ){
   		z-index: 1;
   		padding: 10px;
+		top: -82px;
+		position: absolute;
 	}
 
 	input[type="search"] {
@@ -98,10 +100,10 @@
 
 .js #nav-bar-search {
 	@include breakpoint( $tablet ){
-		display: none;
+		// display: none;
   		position: absolute;
   		right: 1.5em;
-  		top: 0;
+
   		z-index: 1;
   		padding: 0;
  		@include transition(all, 0.3s, ease-in-out);
@@ -117,6 +119,7 @@
 .js-search-active #nav-bar-search {
   // background: $color_grey-light;
   display: block;
+  top: 0;
   @include transition(all, 0.3s, ease-in-out); 
 } 
 

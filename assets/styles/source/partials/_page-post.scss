@@ -90,6 +90,15 @@ object {
 
 .single-portfolio_item {
 
+	.entry-content {
+		.content-insert {
+			padding: 1em 0;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			margin-bottom: 1em;
+		}
+	}
+
 	.media-object {
 
 		@include add-grid(24 at 480px);
