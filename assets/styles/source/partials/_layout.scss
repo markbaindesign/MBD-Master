@@ -2,17 +2,13 @@
    Layout
    ========================================================================== */
 
-html, 
-body,
-#page {
-	height: 100%; /* Important for sticky footer */
-}
+
 
 .section {
 	width: 100%;
-	padding: 1em 3%;
+	padding: 1em 6%;
 	@include breakpoint($tablet) {
-		padding: 3em 3%;
+		padding: 3em 6%;
 	}
 
 	.container {

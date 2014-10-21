@@ -28,12 +28,12 @@
 					comments_template();
 				endif;
 			?>
-			<div class="section post-navigation">
+			<div id="post-navigation" class="section post-navigation">
 				<div class="container">
 					<?php	mbdmaster_post_nav(); ?>
 				</div>
 			</div>
-			<div class="section post-navigation">
+			<div id="bookshelf" class="section post-navigation">
 				<div class="container">
 					<?php	get_template_part( 'content', 'bookshelf' ); ?>
 				</div>

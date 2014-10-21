@@ -56,7 +56,7 @@ form {
 					padding-right: 10px;
 				}
 				&.signin { /* The sign up button */
-					@include cta-primary;
+					// @include cta-primary;
 					display: block;
 					width: 100%;
 					@include breakpoint( $mobile ) {

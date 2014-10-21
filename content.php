@@ -43,9 +43,9 @@
 			) );
 		?>
 		<?php
-			if ( is_singular( 'portfolio_item' ) ) {
-				get_template_part( 'content', 'testimonials' );
-			}
+			//if ( is_singular( 'portfolio_item' ) ) {
+				// get_template_part( 'content', 'testimonials' );
+			// }
 		?>
 	</div><!-- .entry-content -->
 

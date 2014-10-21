@@ -339,3 +339,38 @@
   -moz-box-shadow: $horizontal $vertical $blur $color;
   box-shadow: $horizontal $vertical $blur $color;
 }
+
+@mixin palette-1 {
+	color: $color_brown;
+	background: $color_orange;
+	a {
+		&:link, &:visited {
+			color: $color_white;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		&:hover {
+			color: $color_brown;
+			border-bottom: 1px solid rgba(0,0,0,.3);
+		}
+		&:active {
+			border-bottom: 1px solid rgba(0,0,0,.6);
+		}
+	}
+}
+
+@mixin palette-2 {
+	color: $color_white;
+	background: $color_blue;
+	a {
+		&:link, &:visited {
+			color: $color_white;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		&:hover {
+			border-bottom: 1px solid rgba(0,0,0,.3);
+		}
+		&:active {
+			border-bottom: 1px solid rgba(0,0,0,.6);
+		}
+	}
+}

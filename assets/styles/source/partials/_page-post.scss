@@ -96,7 +96,7 @@ object {
 
 		article {
 			@include breakpoint( $mobile-horizontal ){
-				@include grid-span(16, 1);
+			//	@include grid-span(16, 1);
 			}
 		}
 
@@ -125,7 +125,6 @@ object {
 
 .meta {
 	font-size: .88em;
-	color: $color_grey;
 	font-style: italic;
 
 	a {
@@ -141,11 +140,13 @@ object {
 	border-bottom: none;
 }
 
-.post-navigation {
-	background: lighten( $color_grey-light, 5%);
-	border-top: $color_grey;
+#post-navigation {
+	background: $color_brown;
 }
 
+#bookshelf {
+	background: $color_grey-light;
+}
 #lead {
 	margin: 0;
 	padding-top: 0;

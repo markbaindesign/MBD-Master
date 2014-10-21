@@ -1,12 +1,12 @@
 .hero {
 	@include clearfix;
 	position: relative;
-	color: $color_text-hero;	
-	background: $color_background-hero;
-	border-bottom: 1px solid #ddd;
+	@include palette-1;
 	@include add-grid(24 at 480px);
 	@include add-gutter(1/3);
-
+	a {
+		border-bottom: none;
+	}
 	
 	/* Headings */
 	h1 {color: $color_heading-1-hero;}
@@ -26,11 +26,12 @@
 
 
 	.hero-image {
-		padding: 4px;
-		border: 1px solid rgba(0, 0, 0, 0.15);
+
 		@include breakpoint( $tablet ) {
-			// display: none;
-			@include grid-span(8, 17);
+			position: absolute;
+			bottom: -20px;
+			right: -30px;;			
+			max-width: 350px;
 		}
 	}
 	.hero-text {

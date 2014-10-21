@@ -4,7 +4,7 @@
 			<div class="container">
 				<!-- <div id="lead">Now available in all leading book shops!</div> -->
 				<div class="hero-image">
-					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero.jpg" alt="" title="'">
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero-shadow.png" alt="" title="'">
 				</div>
 				<div class="hero-text">
 					<h1>Nullam vehicula mi quis tristique venenatis.</h1>
@@ -13,7 +13,6 @@
 				
 					<div class="hero-cta">
 						<div class="wow fadeInLeft"><a href="" class="cta button cta-primary">Do this <i aria-hidden="true" class="icon-arrow-right"></i></a></div>
-						<div class="wow fadeInRight"><a href="" class="cta cta-secondary">or, alternatively, do this<i aria-hidden="true" ></i></a></div>
 					</div>
 				</div><!-- .hero-text -->
 			</div><!-- .container -->
@@ -42,21 +41,14 @@
 	<div id="tweets" class="section">
 		<div class="container">
 			<div id="twitter-avatar">
-					<img srcset="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero.jpg" alt="" title="">				
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/mhairi-hero-cropped.png" alt="" title="">				
 			</div><!-- #twitter-avatar -->
 			
 			<div id="tweet-wrapper">
 				<div id="twitter-feed" class="twitter-feed">
-					<div id="twitter-test">
 						<div class="slides">
-						</div>
 					</div>
 				</div>
-				
-				<div id="mobile-twitter-feed" class="twitter-feed">
-					<div id="twitter-test-2"></div>
-				</div>
-
 			</div><!-- #tweet-wrapper -->
 
 		</div><!-- .container -->

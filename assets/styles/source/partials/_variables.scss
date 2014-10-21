@@ -64,10 +64,10 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-footer:					$color_grey; 
 
 	// Links
-	$color_text-anchor:					$color_black; 
-	$color_text-anchor-visited:		$color_black; 
-	$color_text-anchor-hover:			$color_black; 
-	$color_text-anchor-active:			$color_black; 
+	$color_text-anchor:					$color_orange; 
+	$color_text-anchor-visited:		$color_orange; 
+	$color_text-anchor-hover:			darken( $color_orange, 10%); 
+	$color_text-anchor-active:			$color_orange; 
 	
 	// Text Selection
 	$color_text-selection: 				$color_orange;

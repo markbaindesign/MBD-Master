@@ -23,10 +23,11 @@
 
 
 .site-branding {
-	width: 100%;
-	max-width: 150px;
+	width: 50%;
 	float: left;
-
+	@include breakpoint( $mobile-horizontal ){
+		width: 20%;
+	} 
 	a {
 		display: block;
 		opacity: .8;

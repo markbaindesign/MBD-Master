@@ -3,64 +3,64 @@
    ========================================================================== */
 
 div#tweets {
-	background: $color_background-twitter;
-	color: $color_text-twitter;
 
-	a {
+	padding-bottom: 0;
+	@include palette-1;
+	a:link {
 		border-bottom: none;
+	}
+	.container {
+		@include add-grid(24 at 480px);
+		@include add-gutter(1/3);
 	}
 
 	#twitter-avatar {
-		width: 21%;
-		@include center-block;		
+		display: none;
 		@include breakpoint( $tablet ){
-			float: left;
-			width: 12.5%;
-			margin-right: 10%;
+			display: block;
+			width: 160px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
 		}
 
 		img {
-			width: 100%;
-			@include border-radius( 50% );
+			//position: absolute;
+
+			// width: 200px;
+		}
+	}
+	#tweet-wrapper {
+		@include breakpoint( $tablet ){
+			@include grid-span(18, 7);
+		}
+		ul {
+			padding: 0;
+			li {
+				display: block;
+				@include clearfix;
+			}
 		}
 	}
 
 	#twitter-feed {
-		display: none;
-		@include breakpoint( $tablet ){
-			display: block;
-		}
+
 	}
 
-	#mobile-twitter-feed {
-		ul {
-			@extend .nobullets;
-		}
-		@include breakpoint( $tablet ){
-			display: none;
-		}
-	}
+
 
 	.twitter-feed {
 		@include breakpoint( $tablet) {
-			float: left;
-			width: 77.5%;
+
 		}
 
-		.a-tweet {
-			@include clearfix;
-			margin: 0;
-			padding: 0;
-		}
+
 			
-		.tweet {
-			// text-shadow: 1px 1px 1px darken( $color_blue, 45% );
-		}
+
 
 		p {
 				margin: 0 0 1em 0;
 				width: 100%;
-				opacity: .73;
 				@include breakpoint( $tablet ){
 					float: left;
 					text-align: left;
@@ -68,12 +68,13 @@ div#tweets {
 				}
 
 				&.tweet {
-					opacity: .9;
-					color: $color_white;
 					font-style: italic;
 					font-size: 1.3em;
 					margin-bottom: .5em;
 					width: 100%;
+					img {
+						width: 32px; /* Keep emoji in control */
+					}
 				}
 
 				&.timePosted {
@@ -92,13 +93,16 @@ div#tweets {
 					}
 
 					a {
-						margin-left: 20px;
+						margin: 0 10px;
+						font-size: 1.5em;
 						text-decoration: none;
-						opacity: .6;
-
-						&:hover {
-							opacity: 1;
-						}
+						border: none;
+						@include breakpoint( $tablet ){
+							margin: 0 0 0 10px;
+						} 
+						@include breakpoint( $tablet-horizontal ){
+							font-size: 1em;
+						} 
 
 						span {
 							@extend .visuallyhidden;
@@ -109,15 +113,15 @@ div#tweets {
 						}
 	
 						&.twitter_reply_icon:before {
-								content: '\f112' ;
+								content: '\f112\0020' ;
 						}
 
 						&.twitter_retweet_icon:before {
-								content: '\f079' ;
+								content: '\f079\0020' ;
 						}
 
 						&.twitter_fav_icon:before {
-								content: '\f005' ;
+								content: '\f005\0020' ;
 						}						
 					}
 
@@ -191,8 +195,7 @@ div#tweets {
 }
 
 #the-books {
-	background: $color_background-books;
-	color: $color_text-books;
+	@include palette-2;
 	z-index: 1;
 	position: relative;
 	h2 {

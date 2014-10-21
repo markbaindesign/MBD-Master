@@ -159,6 +159,16 @@ $(window).load(function() {
 	 	});
   });
 
+$(window).load(function() {
+    $('#twitter-feed').flexslider({
+			animationLoop: false,
+    		slideshow: false,		 	
+			animation: "slide",
+		 	directionNav: false,
+		 	smoothHeight: true,
+	 	});
+  });
+
 }); // end Wrap all scripts in this
 /*
 =====================================================
@@ -202,7 +212,7 @@ jQuery(document).ready(function($) { // Wrap all scripts in this
 
 var config5 = {
   "id": '513630939277053952',
-  "domId": '',
+  "domId": 'twitter-feed',
   "maxTweets": 3,
   "enableLinks": true,
   "showUser": false,
@@ -213,59 +223,36 @@ var config5 = {
   "showInteraction": true
 };
 
+twitterFetcher.fetch(config5);
+
 var configMobile = {
   "id": '513630939277053952',
   "domId": 'mobile-twitter-feed',
-  "maxTweets": 1,
+  "maxTweets": 3,
   "enableLinks": true,
   "showUser": false,
   "showTime": true,
   "dateFunction": '',
   "showRetweet": true,
-  // "customCallback": handleTweets,
   "showInteraction": true
 };
 twitterFetcher.fetch(configMobile);
 
-var milk_ActiveCarousselTwitter = function () {
-	//twitter carroussel
-	$("#twitter-test").jContent({
-		orientation: 'vertical',
-		width :794,
-		// height:150,
-        easing: 'easeInOutBack',
-        speed: 1000,
-        auto: true,
-        direction: 'next', //or 'prev'
-        pause: 6500,
-        pause_on_hover: true
-     });
-     $(".twitter-link").unbind("click");
-};
-twitterFetcher.fetch(config5);
+
+
 function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
     //var element = document.getElementById('slides');
     var html = '';
     while(n < x) {
-      html += '<div class="article-wrapper"><div class="a-tweet"><p class="tweet-content">' + tweets[n] + '</p></div></div>';
+      html += '<li>' + tweets[n] + '</li>';
       n++;
     }
     html += '';
     //element.innerHTML = html;
     $('.twitter-feed').find("div.slides").html(html);
 	 $( "a" ).wrapInner( "<span></span>" ); // wrap text in span for styling
-    milk_ActiveCarousselTwitter();
+
 }
 }); // end Wrap all scripts in this
-
-/* ==========================================================================
-   Sticky sidebar
-   ========================================================================== */
-
-jQuery( document ).ready( function( $ ) { // Wrap all scripts in this
-
-	$("#sticky-sidebar").stick_in_parent();
-    
-});

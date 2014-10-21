@@ -5,8 +5,6 @@
 	color: $color_text-footer;
 	background: /* url('assets/images/patterns/congruent_outline.png') repeat */ $color_background-footer;
 	font-family: 'tablet-gothic', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 
 	.site-info {
 		margin-bottom: 1em;
@@ -42,11 +40,16 @@
 }
 
 #back-to-top {
+	font-size: 2em;
 	@include breakpoint( $tablet ){	
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
+	
+	@include breakpoint( $desktop ){
+		font-size: 1em;
+	} 
 }
 
 #copyright {
