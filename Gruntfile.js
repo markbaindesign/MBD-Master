@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: { livereload: true },
-                files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'bower_components/font-awesome/scss/*.scss', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: [ '*.php', 'lib/*.php', 'style.css', 'assets/js/*.js', 'bower_components/fontawesome/scss/*.scss', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 			

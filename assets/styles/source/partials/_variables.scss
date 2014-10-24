@@ -47,8 +47,19 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_brown:				#8A665A;
 	$color_orange:	 			#F19A4B; 	
 	$color_grey-dark: 		#3A3A3C;
-
 	$color_blue-green: 		darken( $color_blue, 40% );
+
+	/* Paul Smith Jumper */
+	/* http://www.paulsmith.co.uk/eu-en/shop/campaigns/mens/performance-outerwear/men-s-geometric-colour-block-wool-blend-sweater.html*/
+
+	$color_black-psj:			lighten(#1B1A18, 10%);
+	$color_brown-psj:			lighten(#564E39, 10%);
+	$color_red-psj:			lighten(#9F290B, 10%);
+	$color_pink-psj:			lighten(#E67770, 0%);
+	$color_blue-psj:			lighten(#2A575D, 10%);
+	$color_navy-psj:			lighten(#222933, 10%);
+	$color_aubergine-psj:	lighten(#392023, 10%);
+
 /* Link color names to descriptive names 
 	Use these values outside of this stylesheet!
 */
@@ -60,8 +71,8 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color-text-pre-header:				$color_white;	
 	
 	// Footer
-	$color_background-footer:			$color_grey-dark;
-	$color_text-footer:					$color_grey; 
+	$color_background-footer:			$color_aubergine-psj;
+	$color_text-footer:					rgba(255,255,255, 0.2); 
 
 	// Links
 	$color_text-anchor:					$color_orange; 
@@ -78,7 +89,7 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_background-nav:				$color_blue;
 	
 	// Header
-	$color_background-header:			$color_grey-dark;
+	$color_background-header:			$color_blue-psj;
 	$color_text-header:					$color_black; 
 
 	// Hero
@@ -86,7 +97,7 @@ $width_menu-item: 150px; // Dropdown menu needs fixed width for positioning
 	$color_text-hero:						$color_black;
 
 	// Books
-	$color_background-books:			$color_blue;
+	$color_background-books:			$color_brown-psj;
 	$color_text-books:					$color_black;
 
 	// Quotes

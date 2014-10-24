@@ -344,8 +344,8 @@
 }
 
 @mixin palette-1 {
-	color: $color_brown;
-	background: $color_orange;
+	color: $color_brown-psj;
+	background: $color_pink-psj;
 	a {
 		&:link, &:visited {
 			color: $color_white;
@@ -363,7 +363,7 @@
 
 @mixin palette-2 {
 	color: $color_white;
-	background: $color_blue;
+	background: $color_navy-psj;
 	a {
 		&:link, &:visited {
 			color: $color_white;
